@@ -1,4 +1,3 @@
 export default function Footer() {
-    return 
-    <div>Tôi là Footer</div>;
+    return <div className="footer__inner">Tôi là Footer</div>;
 }

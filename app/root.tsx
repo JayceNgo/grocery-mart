@@ -10,7 +10,6 @@ import Header from "./layouts/header";
 import Footer from "./layouts/footer";
 import type { Route } from "./+types/root";
 import "./css/app.css";
-
 export const links: Route.LinksFunction = () => [
     // Google Fonts
     { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,7 +24,7 @@ export const links: Route.LinksFunction = () => [
     },
     {
         rel: "stylesheet",
-        href: "/fonts/stylesheet.css",  
+        href: "/fonts/stylesheet.css",
     },
 ];
 
@@ -53,17 +52,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
     return (
-        <main>
-            <header>
-                <Header />
+        <body>
+            <header className="header">
+                <div className="container">
+                    <Header />
+                </div>
             </header>
-            <body>
-                <Outlet />
-            </body>
-            <footer>
-                <Footer />
+            <main>
+                <div className="container">
+                    <Outlet />
+                </div>
+            </main>
+            <footer className="footer">
+                <div className="container">
+                    <Footer />
+                </div>
             </footer>
-        </main>
+        </body>
     );
 }
 

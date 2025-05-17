@@ -1,8 +1,77 @@
 .header {
-    /* Medium 26 */
-    font-family: Gordita, sans-serif;
-    font-size: 2.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 3.6rem; /* 138.462% */
+    background: #eee;
+    padding: 30px 0;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin-left: 144px;
+    margin-right: auto;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+}
+
+.top-act {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__group {
+        display: flex;
+        align-items: center;
+
+        min-width: 50px;
+        height: 50px;
+
+        border-radius: 8px;
+        background: var(--Secondary-Color-Background, #fff);
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    }
+
+    &__group--single &__btn {
+        padding: 13px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 13px 20px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__separate {
+        width: 1px;
+        height: 30px;
+        background: #ededf6;
+    }
+
+    &__avatar {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+    }
 }
