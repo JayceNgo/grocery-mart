@@ -1,15 +1,24 @@
 export default function Header() {
     return (
         <div className="top-bar">
+            {/* <!-- More --> */}
+            <button className="top-bar__more" title="menu-button">
+                <img
+                    src="/icons/more.svg"
+                    alt=""
+                    className="icon top-bar__more-icon"
+                />
+            </button>
+
             {/* <!-- Logo --> */}
-            <div className="logo">
+            <a href="/" className="logo">
                 <img
                     src="/icons/logo.svg"
                     alt="grocerymart"
                     className="logo__img"
                 />
                 <h1 className="logo__title">grocerymart</h1>
-            </div>
+            </a>
 
             {/* <!-- Navbar --> */}
             <nav className="navbar">
@@ -20,7 +29,7 @@ export default function Header() {
                             <img
                                 src="/icons/arrow-down.svg"
                                 alt=""
-                                className="navbar__arrow"
+                                className="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -30,7 +39,7 @@ export default function Header() {
                             <img
                                 src="/icons/arrow-down.svg"
                                 alt=""
-                                className="navbar__arrow"
+                                className="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -40,7 +49,7 @@ export default function Header() {
                             <img
                                 src="/icons/arrow-down.svg"
                                 alt=""
-                                className="navbar__arrow"
+                                className="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -54,7 +63,7 @@ export default function Header() {
                         <img
                             src="/icons/search.svg"
                             alt="Search"
-                            className="top-act__icon"
+                            className="icon top-act__icon"
                         />
                     </button>
                 </div>
@@ -64,7 +73,7 @@ export default function Header() {
                         <img
                             src="/icons/heart.svg"
                             alt=""
-                            className="top-act__icon"
+                            className="icon top-act__icon"
                         />
                         <span className="top-act__title">03</span>
                     </button>
@@ -75,7 +84,7 @@ export default function Header() {
                         <img
                             src="/icons/buy.svg"
                             alt=""
-                            className="top-act__icon"
+                            className="icon top-act__icon"
                         />
                         <span className="top-act__title">$65.42</span>
                     </button>
