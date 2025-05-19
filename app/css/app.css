@@ -1206,43 +1206,6 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-@media (max-width: 991.98px) {
-  .logo {
-    gap: 10px;
-    margin-left: 40px;
-  }
-}
-@media (max-width: 767.98px) {
-  .logo {
-    margin-left: 0;
-  }
-}
-@media (max-width: 575.98px) {
-  .logo {
-    margin-left: 0;
-  }
-}
-.logo__title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 145.455%;
-}
-@media (max-width: 991.98px) {
-  .logo__title {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .logo__img {
-    width: 24px;
-  }
-}
-
 html.dark {
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
@@ -1263,6 +1226,9 @@ html {
   --top-act-group-bg-color: #fff;
   --top-act-group-shadow: rgba(237, 237, 246, 0.2);
   --top-act-group-separate: #ededf6;
+  --dropdown-bg-color: #fff;
+  --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+  --top-menu-border-color: #d2d1d6;
 }
 @media (max-width: 991.98px) {
   html {
@@ -1280,6 +1246,7 @@ html {
 }
 
 .top-bar {
+  position: relative;
   padding: 30px 0;
 }
 @media (max-width: 991.98px) {
@@ -1326,6 +1293,7 @@ html {
 }
 .navbar__link {
   gap: 6px;
+  height: 50px;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
@@ -1389,6 +1357,64 @@ html {
   height: 50px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 991.98px) {
+  .logo {
+    gap: 10px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+.logo__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+}
+@media (max-width: 991.98px) {
+  .logo__title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .logo__img {
+    width: 24px;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  padding-top: 54px;
+}
+.dropdown__inner {
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--dropdown-bg-color);
+  box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+}
+.dropdown__inner::before {
+  content: url("/icons/dropdown-arrow.svg");
+  position: absolute;
+  top: -13px;
+  left: var(--arrow-left-pos);
+  translate: -50%;
+  filter: var(--dropdown-arrow-color);
 }
 
 /*# sourceMappingURL=app.css.map */

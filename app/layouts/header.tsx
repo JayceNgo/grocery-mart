@@ -1,4 +1,63 @@
+import { useEffect } from "react";
 export default function Header() {
+    useEffect(() => {
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        function isHidden(element: Element | null): boolean {
+            if (!element) return true;
+            if (window.getComputedStyle(element).display === "none")
+                return true;
+            let parent = element.parentElement;
+            while (parent) {
+                if (window.getComputedStyle(parent).display === "none")
+                    return true;
+                parent = parent.parentElement;
+            }
+            return false;
+        }
+
+        function debounce<T extends (...args: any[]) => void>(
+            func: T,
+            timeout = 300
+        ) {
+            let timer: ReturnType<typeof setTimeout>;
+            return (...args: Parameters<T>) => {
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    func.apply(null, args);
+                }, timeout);
+            };
+        }
+
+        const calArrowPos = debounce(() => {
+            const dropdownList = $(".js-dropdown-list");
+            if (isHidden(dropdownList)) return;
+
+            const items = $$(".js-dropdown-list > li");
+            items.forEach((item) => {
+                const arrowPos =
+                    (item as HTMLElement).offsetLeft +
+                    (item as HTMLElement).offsetWidth / 2;
+                (item as HTMLElement).style.setProperty(
+                    "--arrow-left-pos",
+                    `${arrowPos}px`
+                );
+            });
+        });
+
+        window.addEventListener("resize", calArrowPos);
+        window.addEventListener("template-loaded", calArrowPos);
+
+        // Gọi ngay lập tức nếu không dùng template
+        calArrowPos();
+
+        return () => {
+            window.removeEventListener("resize", calArrowPos);
+            window.removeEventListener("template-loaded", calArrowPos);
+        };
+    }, []);
+
     return (
         <div className="top-bar">
             {/* <!-- More --> */}
@@ -22,7 +81,7 @@ export default function Header() {
 
             {/* <!-- Navbar --> */}
             <nav className="navbar">
-                <ul className="navbar__list">
+                <ul className="navbar__list js-dropdown-list">
                     <li>
                         <a href="" className="navbar__link">
                             Departments
@@ -32,6 +91,16 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
+                        {/* <div className="dropdown">
+                            <div className="dropdown__inner">
+                                Lorem 1 ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam maiores amet hic! Velit
+                                obcaecati quidem, necessitatibus hic inventore
+                                cumque quae impedit aspernatur accusantium,
+                                pariatur eaque nostrum omnis, perspiciatis
+                                suscipit culpa?
+                            </div>
+                        </div> */}
                     </li>
                     <li>
                         <a href="" className="navbar__link">
@@ -42,6 +111,16 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
+                        <div className="dropdown">
+                            <div className="dropdown__inner">
+                                Lorem 2 ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam maiores amet hic! Velit
+                                obcaecati quidem, necessitatibus hic inventore
+                                cumque quae impedit aspernatur accusantium,
+                                pariatur eaque nostrum omnis, perspiciatis
+                                suscipit culpa?
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a href="" className="navbar__link">
@@ -52,6 +131,16 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
+                        {/* <div className="dropdown">
+                            <div className="dropdown__inner">
+                                Lorem 3 ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam maiores amet hic! Velit
+                                obcaecati quidem, necessitatibus hic inventore
+                                cumque quae impedit aspernatur accusantium,
+                                pariatur eaque nostrum omnis, perspiciatis
+                                suscipit culpa?
+                            </div>
+                        </div> */}
                     </li>
                 </ul>
             </nav>
