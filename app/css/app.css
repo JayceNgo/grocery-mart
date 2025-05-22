@@ -1215,6 +1215,10 @@ html.dark {
   --top-act-group-bg-color: #292e39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.2);
   --top-act-group-separate: #ededf6;
+  --dropdown-bg-color: #2f3441;
+  --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(27%)
+      saturate(487%) hue-rotate(185deg) brightness(89%) contrast(88%);
 }
 
 html {
@@ -1288,12 +1292,19 @@ html {
     display: none;
   }
 }
-.navbar__list {
-  gap: 30px;
+.navbar__item:first-child a {
+  margin-left: 0;
+}
+.navbar__item:last-child a {
+  margin-right: 0;
+}
+.navbar__item:hover .dropdown {
+  display: block;
 }
 .navbar__link {
   gap: 6px;
   height: 50px;
+  padding: 0 15px;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
@@ -1400,6 +1411,7 @@ html {
   position: absolute;
   left: 0;
   padding-top: 54px;
+  display: none;
 }
 .dropdown__inner {
   position: relative;

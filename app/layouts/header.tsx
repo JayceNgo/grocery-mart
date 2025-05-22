@@ -19,7 +19,7 @@ export default function Header() {
 
         function debounce<T extends (...args: any[]) => void>(
             func: T,
-            timeout = 300
+            timeout = 0
         ) {
             let timer: ReturnType<typeof setTimeout>;
             return (...args: Parameters<T>) => {
@@ -82,7 +82,7 @@ export default function Header() {
             {/* <!-- Navbar --> */}
             <nav className="navbar">
                 <ul className="navbar__list js-dropdown-list">
-                    <li>
+                    <li className="navbar__item">
                         <a href="" className="navbar__link">
                             Departments
                             <img
@@ -91,7 +91,7 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
-                        {/* <div className="dropdown">
+                        <div className="dropdown">
                             <div className="dropdown__inner">
                                 Lorem 1 ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsam maiores amet hic! Velit
@@ -100,9 +100,9 @@ export default function Header() {
                                 pariatur eaque nostrum omnis, perspiciatis
                                 suscipit culpa?
                             </div>
-                        </div> */}
+                        </div>
                     </li>
-                    <li>
+                    <li className="navbar__item">
                         <a href="" className="navbar__link">
                             Grocery
                             <img
@@ -122,7 +122,7 @@ export default function Header() {
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li className="navbar__item">
                         <a href="" className="navbar__link">
                             Beauty
                             <img
@@ -131,7 +131,7 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
-                        {/* <div className="dropdown">
+                        <div className="dropdown">
                             <div className="dropdown__inner">
                                 Lorem 3 ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsam maiores amet hic! Velit
@@ -140,7 +140,7 @@ export default function Header() {
                                 pariatur eaque nostrum omnis, perspiciatis
                                 suscipit culpa?
                             </div>
-                        </div> */}
+                        </div>
                     </li>
                 </ul>
             </nav>
