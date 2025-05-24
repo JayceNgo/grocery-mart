@@ -93,12 +93,149 @@ export default function Header() {
                         </a>
                         <div className="dropdown">
                             <div className="dropdown__inner">
-                                Lorem 1 ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam maiores amet hic! Velit
-                                obcaecati quidem, necessitatibus hic inventore
-                                cumque quae impedit aspernatur accusantium,
-                                pariatur eaque nostrum omnis, perspiciatis
-                                suscipit culpa?
+                                <div className="top-menu">
+                                    <div className="top-menu__main">
+                                        {/* Menu column */}
+                                        <div className="menu-column">
+                                            <div className="menu-column__icon">
+                                                <img
+                                                    src="/img/category/cate-1.1.svg"
+                                                    alt=""
+                                                    className="menu-column__icon-1"
+                                                />
+                                                <img
+                                                    src="/img/category/cate-1.2.svg"
+                                                    alt=""
+                                                    className="menu-column__icon-2"
+                                                />
+                                            </div>
+                                            <div className="menu-column__content">
+                                                <h2 className="menu-column__heading">
+                                                    All Departments
+                                                </h2>
+                                                <ul className="menu-column__list">
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Savings & Featured
+                                                            Shops
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Electronics
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Clothing, Shoes &
+                                                            Accessories
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Home, Furniture &
+                                                            Appliances
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Toys & Video Games
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Home Improvement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Baby
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Household Essentials
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Personal Care
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Patio & Garden
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Sports & Outdoors
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Gift Cards
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Auto, Tires and
+                                                            Industrial
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#!"
+                                                            className="menu-column__link"
+                                                        >
+                                                            Movies, Music &
+                                                            Books
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -111,7 +248,7 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
-                        <div className="dropdown">
+                        {/* <div className="dropdown">
                             <div className="dropdown__inner">
                                 Lorem 2 ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsam maiores amet hic! Velit
@@ -120,7 +257,7 @@ export default function Header() {
                                 pariatur eaque nostrum omnis, perspiciatis
                                 suscipit culpa?
                             </div>
-                        </div>
+                        </div> */}
                     </li>
                     <li className="navbar__item">
                         <a href="" className="navbar__link">
@@ -131,7 +268,7 @@ export default function Header() {
                                 className="icon navbar__arrow"
                             />
                         </a>
-                        <div className="dropdown">
+                        {/* <div className="dropdown">
                             <div className="dropdown__inner">
                                 Lorem 3 ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsam maiores amet hic! Velit
@@ -140,7 +277,7 @@ export default function Header() {
                                 pariatur eaque nostrum omnis, perspiciatis
                                 suscipit culpa?
                             </div>
-                        </div>
+                        </div> */}
                     </li>
                 </ul>
             </nav>
