@@ -1,3 +1,4 @@
 {
-    "cSpell.words": ["Gordita"]
+    "cSpell.words": ["Gordita"],
+    "prettier.printWidth": 120
 }
