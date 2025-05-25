@@ -116,6 +116,7 @@ export default function Header() {
             {/* <!-- Navbar --> */}
             <nav className="navbar">
                 <ul className="navbar__list js-dropdown-list">
+                    {/* Departments Menu */}
                     <li className="navbar__item">
                         <a href="" className="navbar__link">
                             Departments
@@ -5257,17 +5258,784 @@ export default function Header() {
                             </div>
                         </div>
                     </li>
+
+                    {/* Grocery Menu */}
                     <li className="navbar__item">
-                        <a href="" className="navbar__link">
+                        <a href="#!" className="navbar__link">
                             Grocery
                             <img src="/icons/arrow-down.svg" alt="" className="icon navbar__arrow" />
                         </a>
+                        <div className="dropdown js-dropdown">
+                            <div className="dropdown__inner">
+                                <div className="top-menu">
+                                    <div className="sub-menu sub-menu--not-main">
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-4.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-4.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Fashion Deals</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Clothing
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Shoes
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Accessories
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bags
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Jewelry
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            {/* <!-- Menu column 2 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-2.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-2.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Electronics Discounts</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Smartphones
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Laptops
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Headphones
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Cameras
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Tablets
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Speakers
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Wearable Tech
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 3 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-1.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-1.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Home & Living Specials</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Furniture
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Kitchenware
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Decor
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bedding
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Appliances
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Lighting
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Outdoor Furniture
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Home Office
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bathroom
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Storage
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Cleaning Supplies
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-6.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-6.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Beauty Bargains</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Skincare
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Makeup
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Haircare
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Fragrances
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Nail Care
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Beauty Tools
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Men's Grooming
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            {/* <!-- Menu column 2 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-5.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-5.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Sports & Outdoors Deals</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Fitness Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Outdoor Gear
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Sportswear
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Camping
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Biking
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-4.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-4.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Fashion Deals</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Clothing
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Shoes
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Accessories
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bags
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Jewelry
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            {/* <!-- Menu column 2 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-2.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-2.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Electronics Discounts</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Smartphones
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Laptops
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Headphones
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Cameras
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Tablets
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Speakers
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Wearable Tech
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
+
+                    {/* Beauty Menu */}
                     <li className="navbar__item">
                         <a href="" className="navbar__link">
                             Beauty
                             <img src="/icons/arrow-down.svg" alt="" className="icon navbar__arrow" />
                         </a>
+                        <div className="dropdown js-dropdown">
+                            <div className="dropdown__inner">
+                                <div className="top-menu">
+                                    <div className="sub-menu sub-menu--not-main">
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-4.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-4.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Bathroom Upgrades</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Shower Heads
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Vanity Units
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bath Tubs
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Tile Options
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bathroom Lighting
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Cabinet Designs
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Countertops
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Kitchen Islands
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Backsplash Options
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Appliance Upgrades
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-1.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-1.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Flooring Solutions</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Hardwood Flooring
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Tile Flooring
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Laminate Options
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Carpet Choices
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Vinyl Flooring
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            {/* <!-- Menu column 2 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-2.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-2.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Outdoor Improvements</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Deck Designs
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Patio Ideas
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Landscaping
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Garden Decor
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Outdoor Lighting
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-6.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-6.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Paint & Wallpaper</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Wall Paints
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Primers
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Wallpapers
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Stencils
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Paint Brushes
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            {/* <!-- Menu column 2 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-5.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-5.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Lighting & Fixtures</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Ceiling Lights
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Wall Lamps
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Outdoor Lights
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Chandeliers
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Table Lamps
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="sub-menu__column">
+                                            {/* <!-- Menu column 1 --> */}
+                                            <div className="menu-column">
+                                                <div className="menu-column__icon">
+                                                    <img
+                                                        src="/img/category/cate-4.1.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-1"
+                                                    />
+                                                    <img
+                                                        src="/img/category/cate-4.2.svg"
+                                                        alt=""
+                                                        className="menu-column__icon-2"
+                                                    />
+                                                </div>
+                                                <div className="menu-column__content">
+                                                    <h2 className="menu-column__heading">
+                                                        <a href="#!">Bathroom Upgrades</a>
+                                                    </h2>
+                                                    <ul className="menu-column__list">
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Shower Heads
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Vanity Units
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bath Tubs
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Tile Options
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Bathroom Lighting
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Cabinet Designs
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Countertops
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Kitchen Islands
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Backsplash Options
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-column__item">
+                                                            <a href="#!" className="menu-column__link">
+                                                                Appliance Upgrades
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
