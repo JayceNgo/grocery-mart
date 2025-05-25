@@ -130,7 +130,7 @@ export default function Header() {
     return (
         <div className="top-bar">
             {/* <!-- More --> */}
-            <button className="top-bar__more js-toggle" toggle-target="#navbar">
+            <button className="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
                 <img src="/icons/more.svg" alt="" className="icon top-bar__more-icon" />
             </button>
 
@@ -141,7 +141,7 @@ export default function Header() {
             </a>
 
             {/* <!-- Navbar --> */}
-            <nav id="navbar" className="navbar hide">
+            <nav id="navbar" className="navbar show">
                 <button className="navbar__close-btn js-toggle" toggle-target="#navbar">
                     <img src="/icons/arrow-left.svg" alt="" />
                 </button>
@@ -158,7 +158,7 @@ export default function Header() {
                                     <div className="top-menu__main">
                                         {/* <!-- Menu column --> */}
                                         <div className="menu-column">
-                                            <div className="menu-column__icon">
+                                            <div className="menu-column__icon d-lg-none">
                                                 <img
                                                     src="/img/category/cate-1.1.svg"
                                                     alt=""
@@ -171,7 +171,7 @@ export default function Header() {
                                                 />
                                             </div>
                                             <div className="menu-column__content">
-                                                <h2 className="menu-column__heading">All Departments</h2>
+                                                <h2 className="menu-column__heading d-lg-none">All Departments</h2>
                                                 <ul className="menu-column__list js-menu-list">
                                                     <li className="menu-column__item">
                                                         <a href="#!" className="menu-column__link">
@@ -6080,7 +6080,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className="top-act__group">
+                <div className="top-act__group d-md-none">
                     <button className="top-act__btn">
                         <img src="/icons/heart.svg" alt="" className="icon top-act__icon" />
                         <span className="top-act__title">03</span>
