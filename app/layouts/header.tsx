@@ -4,11 +4,11 @@ import { useEffect } from "react";
 export default function Header() {
     // useEffect dùng để chạy logic DOM sau khi component đã render
     useEffect(() => {
-        // Shortcut: $ để chọn phần tử đầu tiên, $$ để chọn tất cả phần tử
+        // Shortcut: $ selects the first element, $$ selects all elements
         const $ = document.querySelector.bind(document);
         const $$ = document.querySelectorAll.bind(document);
 
-        // Hàm kiểm tra xem một phần tử (hoặc cha của nó) có đang bị ẩn không
+        // Check if an element or its parent is hidden
         function isHidden(element: Element | null): boolean {
             if (!element) return true;
             if (window.getComputedStyle(element).display === "none") return true;
@@ -20,7 +20,7 @@ export default function Header() {
             return false;
         }
 
-        // Hàm debounce để giới hạn tần suất gọi hàm (tránh gọi liên tục khi resize)
+        // Debounce function to limit function call frequency
         function debounce<T extends (...args: any[]) => void>(func: T, timeout = 0) {
             let timer: ReturnType<typeof setTimeout>;
             return (...args: Parameters<T>) => {
@@ -31,7 +31,7 @@ export default function Header() {
             };
         }
 
-        // Tính toán vị trí mũi tên của từng item trong dropdown menu
+        // Calculates arrow position for each dropdown item
         const calArrowPos = debounce(() => {
             const dropdownList = $(".js-dropdown-list");
             if (isHidden(dropdownList)) return;
@@ -40,23 +40,21 @@ export default function Header() {
             items.forEach((item) => {
                 const arrowPos = (item as HTMLElement).offsetLeft + (item as HTMLElement).offsetWidth / 2;
 
-                // Gán biến CSS custom --arrow-left-pos để định vị mũi tên
+                // Set CSS custom property for arrow position
                 (item as HTMLElement).style.setProperty("--arrow-left-pos", `${arrowPos}px`);
             });
         });
 
-        // Xử lý hiệu ứng giữ item menu được active khi hover
+        // Handles hover effect to keep menu item active
         const handleActiveMenu = () => {
             const dropdowns = $$(".js-dropdown");
             const menus = $$(".js-menu-list");
             const activeClass = "menu-column__item--active";
 
-            // Xóa class active khỏi item đang active
             const removeActive = (menu: Element) => {
                 menu.querySelector(`.${activeClass}`)?.classList.remove(activeClass);
             };
 
-            // Khởi tạo menu: gán item đầu tiên là active và xử lý hover
             const init = () => {
                 menus.forEach((menu) => {
                     const items = menu.children;
@@ -67,7 +65,7 @@ export default function Header() {
 
                     Array.from(items).forEach((item) => {
                         (item as HTMLElement).onmouseenter = () => {
-                            if (window.innerWidth <= 991) return; // Không áp dụng với màn hình nhỏ
+                            if (window.innerWidth <= 991) return;
                             removeActive(menu);
                             item.classList.add(activeClass);
                         };
@@ -77,33 +75,62 @@ export default function Header() {
 
             init();
 
-            // Khi rê chuột ra khỏi dropdown, reset lại menu
+            // Reset menu on mouse leave
             dropdowns.forEach((dropdown) => {
                 (dropdown as HTMLElement).onmouseleave = () => init();
             });
         };
 
-        // Gán sự kiện resize và template-loaded để cập nhật vị trí mũi tên và xử lý active menu
+        // NEW: Initializes toggle logic (from your JS code)
+        const initJsToggle = () => {
+            $$(".js-toggle").forEach((button) => {
+                const target = button.getAttribute("toggle-target");
+                if (!target) {
+                    document.body.innerText = `Cần thêm toggle-target cho: ${button.outerHTML}`;
+                    return;
+                }
+
+                button.addEventListener("click", () => {
+                    const targetEl = $(target);
+                    if (!targetEl) {
+                        document.body.innerText = `Không tìm thấy phần tử "${target}"`;
+                        return;
+                    }
+
+                    const isHidden = targetEl.classList.contains("hide");
+
+                    requestAnimationFrame(() => {
+                        targetEl.classList.toggle("hide", !isHidden);
+                        targetEl.classList.toggle("show", isHidden);
+                    });
+                });
+            });
+        };
+
+        // Add event listeners for layout updates and toggles
         window.addEventListener("resize", calArrowPos);
         window.addEventListener("template-loaded", calArrowPos);
         window.addEventListener("template-loaded", handleActiveMenu);
+        window.addEventListener("template-loaded", initJsToggle);
 
-        // Gọi ngay lập tức khi component mount
+        // Run immediately on mount
         calArrowPos();
         handleActiveMenu();
+        initJsToggle();
 
-        // Dọn dẹp listener khi component unmount
+        // Cleanup on unmount
         return () => {
             window.removeEventListener("resize", calArrowPos);
             window.removeEventListener("template-loaded", calArrowPos);
             window.removeEventListener("template-loaded", handleActiveMenu);
+            window.removeEventListener("template-loaded", initJsToggle);
         };
     }, []);
 
     return (
         <div className="top-bar">
             {/* <!-- More --> */}
-            <button className="top-bar__more">
+            <button className="top-bar__more js-toggle" toggle-target="#navbar">
                 <img src="/icons/more.svg" alt="" className="icon top-bar__more-icon" />
             </button>
 
@@ -114,11 +141,14 @@ export default function Header() {
             </a>
 
             {/* <!-- Navbar --> */}
-            <nav className="navbar">
+            <nav id="navbar" className="navbar hide">
+                <button className="navbar__close-btn js-toggle" toggle-target="#navbar">
+                    <img src="/icons/arrow-left.svg" alt="" />
+                </button>
                 <ul className="navbar__list js-dropdown-list">
                     {/* Departments Menu */}
                     <li className="navbar__item">
-                        <a href="" className="navbar__link">
+                        <a href="#!" className="navbar__link">
                             Departments
                             <img src="/icons/arrow-down.svg" alt="" className="icon navbar__arrow" />
                         </a>
@@ -5680,7 +5710,7 @@ export default function Header() {
 
                     {/* Beauty Menu */}
                     <li className="navbar__item">
-                        <a href="" className="navbar__link">
+                        <a href="#!" className="navbar__link">
                             Beauty
                             <img src="/icons/arrow-down.svg" alt="" className="icon navbar__arrow" />
                         </a>
@@ -6039,6 +6069,8 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
+
+            <div className="navbar__overlay js-toggle" toggle-target="#navbar"></div>
 
             {/* <!-- Actions --> */}
             <div className="top-act">
