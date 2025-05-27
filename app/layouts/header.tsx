@@ -167,9 +167,22 @@ export default function Header() {
 
             {/* <!-- Navbar --> */}
             <nav id="navbar" className="navbar show">
-                <button className="navbar__close-btn js-toggle" toggle-target="#navbar">
-                    <img src="/icons/arrow-left.svg" alt="" />
+                <button className="navbar__close-btn js-toggle icon" toggle-target="#navbar">
+                    <img className="icon" src="/icons/arrow-left.svg" alt="" />
                 </button>
+
+                <a href="" className="nav-btn d-none d-md-flex">
+                    <img src="/icons/buy.svg" alt="" className="nav-btn__icon icon" />
+                    <span className="nav-btn__title">Card</span>
+                    <span className="nav-btn__qnt">3</span>
+                </a>
+
+                <a href="" className="nav-btn d-none d-md-flex">
+                    <img src="/icons/heart.svg" alt="" className="nav-btn__icon icon" />
+                    <span className="nav-btn__title">Favourite</span>
+                    <span className="nav-btn__qnt">3</span>
+                </a>
+
                 <ul className="navbar__list js-dropdown-list">
                     {/* Departments Menu */}
                     <li className="navbar__item">
