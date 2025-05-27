@@ -4,11 +4,11 @@ import { useEffect } from "react";
 export default function Header() {
     // useEffect dùng để chạy logic DOM sau khi component đã render
     useEffect(() => {
-        // Shortcut: $ selects the first element, $$ selects all elements
+        // Select shorthand functions
         const $ = document.querySelector.bind(document);
         const $$ = document.querySelectorAll.bind(document);
 
-        // Check if an element or its parent is hidden
+        // Check if an element or any of its parents is hidden
         function isHidden(element: Element | null): boolean {
             if (!element) return true;
             if (window.getComputedStyle(element).display === "none") return true;
@@ -20,7 +20,7 @@ export default function Header() {
             return false;
         }
 
-        // Debounce function to limit function call frequency
+        // Debounce to prevent too frequent execution of a function
         function debounce<T extends (...args: any[]) => void>(func: T, timeout = 0) {
             let timer: ReturnType<typeof setTimeout>;
             return (...args: Parameters<T>) => {
@@ -31,7 +31,7 @@ export default function Header() {
             };
         }
 
-        // Calculates arrow position for each dropdown item
+        // Calculate the arrow position for each dropdown menu item
         const calArrowPos = debounce(() => {
             const dropdownList = $(".js-dropdown-list");
             if (isHidden(dropdownList)) return;
@@ -39,13 +39,11 @@ export default function Header() {
             const items = $$(".js-dropdown-list > li");
             items.forEach((item) => {
                 const arrowPos = (item as HTMLElement).offsetLeft + (item as HTMLElement).offsetWidth / 2;
-
-                // Set CSS custom property for arrow position
                 (item as HTMLElement).style.setProperty("--arrow-left-pos", `${arrowPos}px`);
             });
         });
 
-        // Handles hover effect to keep menu item active
+        // Handle menu item activation for hover and click
         const handleActiveMenu = () => {
             const dropdowns = $$(".js-dropdown");
             const menus = $$(".js-menu-list");
@@ -61,6 +59,8 @@ export default function Header() {
                     if (!items.length) return;
 
                     removeActive(menu);
+
+                    // On desktop: make first item active by default
                     if (window.innerWidth > 991) items[0].classList.add(activeClass);
 
                     Array.from(items).forEach((item) => {
@@ -81,25 +81,25 @@ export default function Header() {
 
             init();
 
-            // Reset menu on mouse leave
+            // Reset active state when mouse leaves dropdown
             dropdowns.forEach((dropdown) => {
                 (dropdown as HTMLElement).onmouseleave = () => init();
             });
         };
 
-        // NEW: Initializes toggle logic (from your JS code)
+        // Initialize toggle buttons (e.g. show/hide menu)
         const initJsToggle = () => {
             $$(".js-toggle").forEach((button) => {
                 const target = button.getAttribute("toggle-target");
                 if (!target) {
-                    document.body.innerText = `Cần thêm toggle-target cho: ${button.outerHTML}`;
+                    document.body.innerText = `Missing toggle-target for: ${button.outerHTML}`;
                     return;
                 }
 
                 button.addEventListener("click", () => {
                     const targetEl = $(target);
                     if (!targetEl) {
-                        document.body.innerText = `Không tìm thấy phần tử "${target}"`;
+                        document.body.innerText = `Element "${target}" not found`;
                         return;
                     }
 
@@ -113,23 +113,42 @@ export default function Header() {
             });
         };
 
-        // Add event listeners for layout updates and toggles
+        //  NEW: Toggle navbar dropdown items on small screens (mobile view)
+        const initDropdownClick = () => {
+            const links = $$(".js-dropdown-list > li > a");
+
+            links.forEach((link) => {
+                link.onclick = () => {
+                    // Only apply toggle on small screens (≤ 991px)
+                    if (window.innerWidth > 991) return;
+
+                    // Toggle the class on the parent <li>
+                    const item = link.closest("li");
+                    item?.classList.toggle("navbar__item--active");
+                };
+            });
+        };
+
+        // Register event listeners
         window.addEventListener("resize", calArrowPos);
         window.addEventListener("template-loaded", calArrowPos);
         window.addEventListener("template-loaded", handleActiveMenu);
         window.addEventListener("template-loaded", initJsToggle);
+        window.addEventListener("template-loaded", initDropdownClick); //  Added listener
 
-        // Run immediately on mount
+        // Run on component mount
         calArrowPos();
         handleActiveMenu();
         initJsToggle();
+        initDropdownClick(); //  Run once on mount
 
-        // Cleanup on unmount
+        // Clean up event listeners on component unmount
         return () => {
             window.removeEventListener("resize", calArrowPos);
             window.removeEventListener("template-loaded", calArrowPos);
             window.removeEventListener("template-loaded", handleActiveMenu);
             window.removeEventListener("template-loaded", initJsToggle);
+            window.removeEventListener("template-loaded", initDropdownClick); //  Clean up
         };
     }, []);
 
