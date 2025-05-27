@@ -61,13 +61,19 @@ export default function Header() {
                     if (!items.length) return;
 
                     removeActive(menu);
-                    items[0].classList.add(activeClass);
+                    if (window.innerWidth > 991) items[0].classList.add(activeClass);
 
                     Array.from(items).forEach((item) => {
                         (item as HTMLElement).onmouseenter = () => {
                             if (window.innerWidth <= 991) return;
                             removeActive(menu);
                             item.classList.add(activeClass);
+                        };
+                        (item as HTMLElement).onclick = () => {
+                            if (window.innerWidth > 991) return;
+                            removeActive(menu);
+                            item.classList.add(activeClass);
+                            item.scrollIntoView();
                         };
                     });
                 });
