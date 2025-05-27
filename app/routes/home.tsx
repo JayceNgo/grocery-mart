@@ -9,13 +9,12 @@ export default function Home() {
         <div className="slideshow">
             <div className="slideshow__inner">
                 <div className="slideshow__item">
-                    <img src="/img/slideshow/item-1.png" alt="" className="slideshow__img" />
-                </div>
-                <div className="slideshow__item">
-                    <img src="/img/slideshow/item-1.png" alt="" className="slideshow__img" />
-                </div>
-                <div className="slideshow__item">
-                    <img src="/img/slideshow/item-1.png" alt="" className="slideshow__img" />
+                    <a href="#!" className="slideshow__link">
+                        <picture>
+                            <source media="(max-width : 767.98px)" srcSet="/img/slideshow/item-1-md.png" />
+                            <img src="/img/slideshow/item-1.png" alt="" className="slideshow__img" />
+                        </picture>
+                    </a>
                 </div>
             </div>
             <div className="slideshow__page">
