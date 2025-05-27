@@ -48,7 +48,7 @@ export default function App() {
                 </div>
             </header>
             <main>
-                <div className="container">
+                <div className="container home">
                     <Outlet />
                 </div>
             </main>

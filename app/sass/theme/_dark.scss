@@ -24,6 +24,13 @@ html.dark {
     --sidebar-bg: #292e39;
     --sidebar-shadow: rgba(23, 28, 40, 0.4);
 
+    // Category Item
+    --cate-item-bg: #171c28;
+    --cate-item-thumb-bg: #292e39;
+    --cate-itemm-title-color: #fff;
+
+    @include abstracts.screen(md) {
+    }
     @include abstracts.screen(lg) {
         --header-shadow-color: #00000033;
     }
