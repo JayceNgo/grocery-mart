@@ -118,7 +118,7 @@ export default function Header() {
             const links = $$(".js-dropdown-list > li > a");
 
             links.forEach((link) => {
-                link.onclick = () => {
+                (link as HTMLElement).onclick = () => {
                     // Only apply toggle on small screens (≤ 991px)
                     if (window.innerWidth > 991) return;
 
