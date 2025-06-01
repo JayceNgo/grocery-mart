@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import React from "react";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -46,10 +47,10 @@ export default function Home() {
                         <a href="#!">
                             <article className="cate-item">
                                 <img src="/img/category-item/item-1.png" alt="" className="cate-item__thumb" />
-                                <section className="cate-item__info">
+                                <div className="cate-item__info">
                                     <h3 className="cate-item__title">$24 - $150</h3>
                                     <p className="cate-item__desc">New sumatra mandeling coffe blend</p>
-                                </section>
+                                </div>
                             </article>
                         </a>
                     </div>
@@ -59,10 +60,10 @@ export default function Home() {
                         <a href="#!">
                             <article className="cate-item">
                                 <img src="/img/category-item/item-2.png" alt="" className="cate-item__thumb" />
-                                <section className="cate-item__info">
+                                <div className="cate-item__info">
                                     <h3 className="cate-item__title">$37 - $160</h3>
                                     <p className="cate-item__desc">Espresso arabica and robusta beans</p>
-                                </section>
+                                </div>
                             </article>
                         </a>
                     </div>
@@ -72,10 +73,10 @@ export default function Home() {
                         <a href="#!">
                             <article className="cate-item">
                                 <img src="/img/category-item/item-3.png" alt="" className="cate-item__thumb" />
-                                <section className="cate-item__info">
+                                <div className="cate-item__info">
                                     <h3 className="cate-item__title">$32 - $160</h3>
                                     <p className="cate-item__desc">Lavazza top class whole bean coffee blend</p>
-                                </section>
+                                </div>
                             </article>
                         </a>
                     </div>
@@ -86,10 +87,81 @@ export default function Home() {
             <section className="home__container">
                 <div className="home__row">
                     <h2 className="home__heading">Total LavAzza 1320</h2>
-                    <button className="filter-btn">
-                        Filter
-                        <img src="/icons/filter.svg" alt="" className="filter-btn__icon icon" />
-                    </button>
+
+                    <div className="filter-wrap">
+                        <button className="filter-btn">
+                            Filter
+                            <img src="/icons/filter.svg" alt="" className="filter-btn__icon icon" />
+                        </button>
+                        <div className="filter">
+                            <h3 className="filter__heading">Filter</h3>
+                            <form action="" className="filter__form">
+                                <div className="filter__row">
+                                    {/* <!-- Filter column 1 --> */}
+                                    <div className="filter__col">
+                                        <label htmlFor="" className="filter__form-label">
+                                            Price
+                                        </label>
+                                        <div className="filter__form-group">
+                                            <div
+                                                className="filter__form-slider"
+                                                style={
+                                                    {
+                                                        "--min-value": "10%",
+                                                        "--max-value": "60%",
+                                                    } as React.CSSProperties
+                                                }
+                                            ></div>
+                                        </div>
+                                        <div className="filter__form-group filter__form-group--inline">
+                                            <div>
+                                                <label
+                                                    htmlFor=""
+                                                    className="filter__form-label filter__form-label--small"
+                                                >
+                                                    Minimum
+                                                </label>
+                                                <input
+                                                    title="Minimum price"
+                                                    placeholder="Min"
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$30.00"
+                                                    className="filter__form-input"
+                                                    readOnly
+                                                />
+                                            </div>
+                                            <div>
+                                                <label
+                                                    htmlFor=""
+                                                    className="filter__form-label filter__form-label--small"
+                                                >
+                                                    Maximum
+                                                </label>
+                                                <input
+                                                    title="Maximum price"
+                                                    placeholder="Max"
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$100.00"
+                                                    className="filter__form-input"
+                                                    readOnly
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* <!-- Filter column 2 --> */}
+                                    <div className="filter__col"></div>
+
+                                    {/* <!-- Filter column 3 --> */}
+                                    <div className="filter__col"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div className="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
                     {/* <!-- Product card 1 --> */}
