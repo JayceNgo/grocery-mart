@@ -94,6 +94,8 @@ export default function Home() {
                             <img src="/icons/filter.svg" alt="" className="filter-btn__icon icon" />
                         </button>
                         <div className="filter">
+                            <img src="/icons/arrow-up.png" alt="" className="filter__arrow" />
+
                             <h3 className="filter__heading">Filter</h3>
                             <form action="" className="filter__form">
                                 <div className="filter__row">
@@ -121,16 +123,17 @@ export default function Home() {
                                                 >
                                                     Minimum
                                                 </label>
-                                                <input
-                                                    title="Minimum price"
-                                                    placeholder="Min"
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    value="$30.00"
-                                                    className="filter__form-input"
-                                                    readOnly
-                                                />
+                                                <div className="filter__form-text-input filter__form-text-input--small">
+                                                    <input
+                                                        title="Minimum price"
+                                                        placeholder="Min"
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        value="$30.00"
+                                                        className="filter__form-input"
+                                                    />
+                                                </div>
                                             </div>
                                             <div>
                                                 <label
@@ -139,25 +142,99 @@ export default function Home() {
                                                 >
                                                     Maximum
                                                 </label>
-                                                <input
-                                                    title="Maximum price"
-                                                    placeholder="Max"
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    value="$100.00"
-                                                    className="filter__form-input"
-                                                    readOnly
-                                                />
+                                                <div className="filter__form-text-input filter__form-text-input--small">
+                                                    <input
+                                                        title="Maximum price"
+                                                        placeholder="Max"
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        value="$100.00"
+                                                        className="filter__form-input"
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
+                                    <div className="filter__separate"></div>
+
                                     {/* <!-- Filter column 2 --> */}
-                                    <div className="filter__col"></div>
+                                    <div className="filter__col">
+                                        <label htmlFor="" className="filter__form-label">
+                                            Size/Weight
+                                        </label>
+                                        <div className="filter__form-group">
+                                            <div className="filter__form-select-wrap">
+                                                <div
+                                                    className="filter__form-select"
+                                                    style={{ "--width": "158px" } as React.CSSProperties}
+                                                >
+                                                    500g
+                                                    <img
+                                                        src="   /icons/select-arrow.svg"
+                                                        alt=""
+                                                        className="filter__form-select-arrow"
+                                                    />
+                                                </div>
+                                                <div className="filter__form-select">
+                                                    Gram
+                                                    <img
+                                                        src="/icons/select-arrow.svg"
+                                                        alt=""
+                                                        className="filter__form-select-arrow"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="filter__form-group">
+                                            <div className="filter__form-tags">
+                                                <button className="filter__form-tag">Small</button>
+                                                <button className="filter__form-tag">Medium</button>
+                                                <button className="filter__form-tag">Large</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="filter__separate"></div>
 
                                     {/* <!-- Filter column 3 --> */}
-                                    <div className="filter__col"></div>
+                                    <div className="filter__col">
+                                        <label htmlFor="" className="filter__form-label">
+                                            Brand
+                                        </label>
+                                        <div className="filter__form-group">
+                                            <div className="filter__form-text-input">
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    placeholder="Search brand name"
+                                                    className="filter__form-input"
+                                                />
+                                                <img
+                                                    src="/icons/search.svg"
+                                                    alt=""
+                                                    className="filter__form-input-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="filter__form-group">
+                                            <div className="filter__form-tags">
+                                                <button className="filter__form-tag">Lavazza</button>
+                                                <button className="filter__form-tag">Nescafe</button>
+                                                <button className="filter__form-tag">Starbucks</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="filter__row filter__footer">
+                                    <button title="" className="btn btn--text filter__cancel">
+                                        Cancel
+                                    </button>
+                                    <button title="" className="btn btn--primary filter__submit">
+                                        Show Result
+                                    </button>
                                 </div>
                             </form>
                         </div>
