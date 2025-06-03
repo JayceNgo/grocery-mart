@@ -1781,7 +1781,7 @@ html {
   background: #2f71ab;
 }
 .footer__social-link--github {
-  background: transparent;
+  background: black;
 }
 .footer__social-link:hover {
   filter: grayscale(0);
