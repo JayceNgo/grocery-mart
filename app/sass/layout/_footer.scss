@@ -171,6 +171,10 @@
             background: #2f71ab;
         }
 
+        &--github {
+            background: transparent;
+        }
+
         &:hover {
             filter: grayscale(0);
             translate: 0 -3px;

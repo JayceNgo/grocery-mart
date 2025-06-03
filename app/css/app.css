@@ -1780,6 +1780,9 @@ html {
 .footer__social-link--linkedin {
   background: #2f71ab;
 }
+.footer__social-link--github {
+  background: transparent;
+}
 .footer__social-link:hover {
   filter: grayscale(0);
   translate: 0 -3px;
