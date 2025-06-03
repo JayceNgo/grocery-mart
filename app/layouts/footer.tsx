@@ -159,7 +159,7 @@ export default function Footer() {
                         <img src="/icons/linkedin.svg" alt="" className="footer__social-icon" />
                     </a>
                     <a href="https://github.com/JayceNgo" className="footer__social-link footer__social-link--github">
-                        <img src="/icons/github.svg" alt="" className="github__social-icon" />
+                        <img src="/icons/github.svg" alt="" className="footer__social-icon" />
                     </a>
                 </div>
             </div>
