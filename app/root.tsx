@@ -43,19 +43,13 @@ export default function App() {
     return (
         <body>
             <header className="header">
-                <div className="container">
-                    <Header />
-                </div>
+                <Header />
             </header>
             <main>
-                <div className="container home">
-                    <Outlet />
-                </div>
+                <Outlet />
             </main>
             <footer className="footer">
-                <div className="container">
-                    <Footer />
-                </div>
+                <Footer />
             </footer>
         </body>
     );
