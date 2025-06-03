@@ -96,7 +96,8 @@ export default function Header() {
                     return;
                 }
 
-                button.addEventListener("click", () => {
+                button.addEventListener("click", (e) => {
+                    e.preventDefault();
                     const targetEl = $(target);
                     if (!targetEl) {
                         document.body.innerText = `Element "${target}" not found`;
@@ -110,6 +111,16 @@ export default function Header() {
                         targetEl.classList.toggle("show", isHidden);
                     });
                 });
+                document.onclick = function (e) {
+                    const eventTarget = e.target as Element | null;
+                    if (!eventTarget || !eventTarget.closest(target)) {
+                        const targetEl = $(target);
+                        const isHidden = targetEl ? targetEl.classList.contains("hide") : true;
+                        if (!isHidden) {
+                            (button as HTMLElement).click();
+                        }
+                    }
+                };
             });
         };
 
@@ -166,7 +177,7 @@ export default function Header() {
             </a>
 
             {/* <!-- Navbar --> */}
-            <nav id="navbar" className="navbar show">
+            <nav id="navbar" className="navbar hide">
                 <button className="navbar__close-btn js-toggle icon" toggle-target="#navbar">
                     <img className="icon" src="/icons/arrow-left.svg" alt="" />
                 </button>

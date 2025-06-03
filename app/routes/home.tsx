@@ -15,19 +15,20 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
     return (
         <div className="homepage">
-            {/* Sliceshow */}
+            {/* <!-- Slideshow --> */}
             <div className="home__container">
                 <div className="slideshow">
                     <div className="slideshow__inner">
                         <div className="slideshow__item">
                             <a href="#!" className="slideshow__link">
                                 <picture>
-                                    <source media="(max-width : 767.98px)" srcSet="/img/slideshow/item-1-md.png" />
+                                    <source media="(max-width: 767.98px)" srcSet="/img/slideshow/item-1-md.png" />
                                     <img src="/img/slideshow/item-1.png" alt="" className="slideshow__img" />
                                 </picture>
                             </a>
                         </div>
                     </div>
+
                     <div className="slideshow__page">
                         <span className="slideshow__num">1</span>
                         <span className="slideshow__slider"></span>
@@ -35,14 +36,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* Browser categories */}
+
+            {/* <!-- Browse Categories --> */}
             <section className="home__container">
                 <div className="home__row">
                     <h2 className="home__heading">Browse Categories</h2>
                 </div>
-
                 <div className="home__cate row row-cols-3 row-cols-md-1">
-                    {/* category item 1 */}
+                    {/* <!-- Category item 1 --> */}
                     <div className="col">
                         <a href="#!">
                             <article className="cate-item">
@@ -55,7 +56,7 @@ export default function Home() {
                         </a>
                     </div>
 
-                    {/* category item 2 */}
+                    {/* <!-- Category item 2 --> */}
                     <div className="col">
                         <a href="#!">
                             <article className="cate-item">
@@ -68,14 +69,14 @@ export default function Home() {
                         </a>
                     </div>
 
-                    {/* category item 3 */}
+                    {/* <!-- Category item 3 --> */}
                     <div className="col">
                         <a href="#!">
                             <article className="cate-item">
                                 <img src="/img/category-item/item-3.png" alt="" className="cate-item__thumb" />
                                 <div className="cate-item__info">
                                     <h3 className="cate-item__title">$32 - $160</h3>
-                                    <p className="cate-item__desc">Lavazza top class whole bean coffee blend</p>
+                                    <p className="cate-item__desc">Lavazza top className whole bean coffee blend</p>
                                 </div>
                             </article>
                         </a>
@@ -83,22 +84,21 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Browser Product */}
+            {/* <!-- Browse Products --> */}
             <section className="home__container">
                 <div className="home__row">
                     <h2 className="home__heading">Total LavAzza 1320</h2>
-
                     <div className="filter-wrap">
-                        <button className="filter-btn">
+                        <button className="filter-btn js-toggle" toggle-target="#home-filter">
                             Filter
                             <img src="/icons/filter.svg" alt="" className="filter-btn__icon icon" />
                         </button>
-                        <div className="filter">
-                            <img src="/icons/arrow-up.png" alt="" className="filter__arrow" />
 
+                        <div id="home-filter" className="filter hide">
+                            <img src="/icons/arrow-up.png" alt="" className="filter__arrow" />
                             <h3 className="filter__heading">Filter</h3>
                             <form action="" className="filter__form">
-                                <div className="filter__row">
+                                <div className="filter__row filter__content">
                                     {/* <!-- Filter column 1 --> */}
                                     <div className="filter__col">
                                         <label htmlFor="" className="filter__form-label">
@@ -125,13 +125,12 @@ export default function Home() {
                                                 </label>
                                                 <div className="filter__form-text-input filter__form-text-input--small">
                                                     <input
-                                                        title="Minimum price"
-                                                        placeholder="Min"
                                                         type="text"
                                                         name=""
                                                         id=""
-                                                        value="$30.00"
                                                         className="filter__form-input"
+                                                        value="$30.00"
+                                                        placeholder="Minimum price"
                                                     />
                                                 </div>
                                             </div>
@@ -144,13 +143,12 @@ export default function Home() {
                                                 </label>
                                                 <div className="filter__form-text-input filter__form-text-input--small">
                                                     <input
-                                                        title="Maximum price"
-                                                        placeholder="Max"
                                                         type="text"
                                                         name=""
                                                         id=""
-                                                        value="$100.00"
                                                         className="filter__form-input"
+                                                        value="$100.00"
+                                                        placeholder="Maximum price"
                                                     />
                                                 </div>
                                             </div>
@@ -172,9 +170,9 @@ export default function Home() {
                                                 >
                                                     500g
                                                     <img
-                                                        src="   /icons/select-arrow.svg"
+                                                        src="/icons/select-arrow.svg"
                                                         alt=""
-                                                        className="filter__form-select-arrow"
+                                                        className="filter__form-select-arrow icon"
                                                     />
                                                 </div>
                                                 <div className="filter__form-select">
@@ -182,7 +180,7 @@ export default function Home() {
                                                     <img
                                                         src="/icons/select-arrow.svg"
                                                         alt=""
-                                                        className="filter__form-select-arrow"
+                                                        className="filter__form-select-arrow icon"
                                                     />
                                                 </div>
                                             </div>
@@ -215,7 +213,7 @@ export default function Home() {
                                                 <img
                                                     src="/icons/search.svg"
                                                     alt=""
-                                                    className="filter__form-input-icon"
+                                                    className="filter__form-input-icon icon"
                                                 />
                                             </div>
                                         </div>
@@ -229,10 +227,16 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="filter__row filter__footer">
-                                    <button title="" className="btn btn--text filter__cancel">
+                                    <button
+                                        className="btn btn--text filter__cancel js-toggle"
+                                        toggle-target="#home-filter"
+                                    >
                                         Cancel
                                     </button>
-                                    <button title="" className="btn btn--primary filter__submit">
+                                    <button
+                                        className="btn btn--primary filter__submit js-toggle"
+                                        toggle-target="#home-filter"
+                                    >
                                         Show Result
                                     </button>
                                 </div>
@@ -240,6 +244,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
                 <div className="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
                     {/* <!-- Product card 1 --> */}
                     <div className="col">
@@ -272,7 +277,7 @@ export default function Home() {
                                 <a href="#!">
                                     <img src="/img/product/item-2.png" alt="" className="product-card__thumb" />
                                 </a>
-                                <button className="like-btn--liked product-card__like-btn">
+                                <button className="like-btn product-card__like-btn">
                                     <img src="/icons/heart.svg" alt="" className="like-btn__icon icon" />
                                     <img src="/icons/heart-red.svg" alt="" className="like-btn__icon--liked" />
                                 </button>
@@ -296,7 +301,7 @@ export default function Home() {
                                 <a href="#!">
                                     <img src="/img/product/item-3.png" alt="" className="product-card__thumb" />
                                 </a>
-                                <button className="like-btn product-card__like-btn">
+                                <button className="like-btn like-btn--liked product-card__like-btn">
                                     <img src="/icons/heart.svg" alt="" className="like-btn__icon icon" />
                                     <img src="/icons/heart-red.svg" alt="" className="like-btn__icon--liked" />
                                 </button>
