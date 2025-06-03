@@ -20,7 +20,16 @@ export const links: Route.LinksFunction = () => [
         href: "/fonts/stylesheet.css",
     },
 ];
-
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "HiepGrocery" },
+        {
+            name: "description",
+            content:
+                "Welcome to HiepNgo Grocery! Đây là một sản phẩm dự án cá nhân về một trang web bán hàng. Với sự phong phú về mặt thẩm mĩ. Chúng tôi cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Hãy cùng khám phá và mua sắm ngay hôm nay!",
+        },
+    ];
+}
 export function Layout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="">
@@ -42,15 +51,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
     return (
         <body>
-            <header className="header">
+            {/* <header className="header">
                 <Header />
-            </header>
+            </header> */}
             <main>
                 <Outlet />
             </main>
-            <footer className="footer">
+            {/* <footer className="footer">
                 <Footer />
-            </footer>
+            </footer> */}
         </body>
     );
 }

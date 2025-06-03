@@ -1,3 +1,74 @@
 export default function SignUp() {
-    return <div>Sign Up</div>;
+    return (
+        <main className="auth">
+            {/* <!-- Auth intro --> */}
+            <div className="auth__intro">
+                <img src="/img/auth/intro.svg" alt="" className="auth__intro-img" />
+                <p className="auth__intro-text">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+            </div>
+            {/* <!-- Auth content --> */}
+            <div className="auth__content">
+                <div className="auth__content-inner">
+                    {/* <!-- Logo --> */}
+                    <a href="./" className="logo">
+                        <img src="/icons/logo.svg" alt="grocerymart" className="logo__img" />
+                        <h1 className="logo__title">HiepGrocery</h1>
+                    </a>
+                    <h1 className="auth__heading">Sign Up</h1>
+                    <p className="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
+                    <form action="" className="form auth__form">
+                        <div className="form__group">
+                            <div className="form__text-input">
+                                <input type="email" name="" id="" placeholder="Email" className="form__input" />
+                                <img src="/icons/message.svg" alt="" className="form__input-icon" />
+                            </div>
+                        </div>
+                        <div className="form__group">
+                            <div className="form__text-input">
+                                <input type="password" name="" id="" placeholder="Password" className="form__input" />
+                                <img src="/icons/lock.svg" alt="" className="form__input-icon" />
+                            </div>
+                        </div>
+                        <div className="form__group">
+                            <div className="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    placeholder="Confirm password"
+                                    className="form__input"
+                                />
+                                <img src="/icons/lock.svg" alt="" className="form__input-icon" />
+                            </div>
+                        </div>
+                        <div className="form__group form__group--inline">
+                            <label className="form__checkbox">
+                                <input type="checkbox" name="" id="" className="form__checkbox-input" />
+                                <span className="form__checkbox-label">Set as default card</span>
+                            </label>
+                            <a href="#!" className="auth__link form__pull-right">
+                                Recovery Password
+                            </a>
+                        </div>
+                        <div className="form__group auth__btn-group">
+                            <button className="btn btn--primary auth__btn">Sign Up</button>
+                            <button className="btn btn--outline auth__btn btn--no-margin">
+                                <img src="/icons/google.svg" alt="" className="btn__icon" />
+                                Sign in with Gmail
+                            </button>
+                        </div>
+                    </form>
+
+                    <p className="auth__text">
+                        You have an account yet?
+                        <a href="./sign-in.html" className="auth__link">
+                            Sign In
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    );
 }

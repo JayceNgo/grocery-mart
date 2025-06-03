@@ -6124,12 +6124,29 @@ export default function Header() {
 
                 {/* <!-- Actions --> */}
                 <div className="top-act">
-                    <a href="/sign-in" className="btn btn--text">
-                        Sign In
-                    </a>
-                    <a href="./sign-up" className="btn btn--primary">
-                        Sign Up
-                    </a>
+                    <div className="top-act__group top-act__group--single">
+                        <button className="top-act__btn">
+                            <img src="/icons/search.svg" alt="" className="icon top-act__icon" />
+                        </button>
+                    </div>
+
+                    <div className="top-act__group d-md-none">
+                        <button className="top-act__btn">
+                            <img src="/icons/heart.svg" alt="" className="icon top-act__icon" />
+                            <span className="top-act__title">03</span>
+                        </button>
+
+                        <div className="top-act__separate"></div>
+
+                        <button className="top-act__btn">
+                            <img src="/icons/buy.svg" alt="" className="icon top-act__icon" />
+                            <span className="top-act__title">$65.42</span>
+                        </button>
+                    </div>
+
+                    <div className="top-act__user">
+                        <img src="/img/avatar.jpg" alt="" className="top-act__avatar" />
+                    </div>
                 </div>
             </div>
         </div>

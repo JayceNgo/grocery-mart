@@ -1,13 +1,24 @@
 import type { Route } from "./+types/home";
 import React from "react";
 import Footer from "~/layouts/footer";
-import Header from "~/layouts/header";
+import HeaderLogined from "~/layouts/header-logined";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "HiepGrocery" },
+        {
+            name: "description",
+            content:
+                "Welcome to HiepNgo Grocery! Đây là một sản phẩm dự án cá nhân về một trang web bán hàng. Với sự phong phú về mặt thẩm mĩ. Chúng tôi cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Hãy cùng khám phá và mua sắm ngay hôm nay!",
+        },
+    ];
+}
 
 export default function Home() {
     return (
         <>
             <header className="header">
-                <Header></Header>
+                <HeaderLogined></HeaderLogined>
             </header>
             <main className="container home">
                 <div className="homepage">

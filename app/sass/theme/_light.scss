@@ -40,6 +40,9 @@ html {
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg: #f8f8fb;
 
+    // AuthAdd commentMore actions
+    --auth-content-bg: #fff;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.4);
