@@ -6,8 +6,8 @@ export default function SignUp() {
             {/* <!-- Auth intro --> */}
             <div className="auth__intro">
                 <a href="./" className="logo auth__intro-logo d-none d-md-flex">
-                    <img src="/icons/logo.svg" alt="grocerymart" className="logo__img" />
-                    <h1 className="logo__title">grocerymart</h1>
+                    <img src="/icons/logo.svg" alt="hiepgrocery" className="logo__img" />
+                    <h1 className="logo__title">HiepGrocery</h1>
                 </a>
                 <img src="/img/auth/intro.svg" alt="" className="auth__intro-img" />
                 <p className="auth__intro-text">
@@ -22,8 +22,8 @@ export default function SignUp() {
             <div id="auth-content" className="auth__content hide">
                 <div className="auth__content-inner">
                     <a href="./" className="logo">
-                        <img src="/icons/logo.svg" alt="grocerymart" className="logo__img" />
-                        <h1 className="logo__title">grocerymart</h1>
+                        <img src="/icons/logo.svg" alt="hiepgrocery" className="logo__img" />
+                        <h1 className="logo__title">HiepGrocery</h1>
                     </a>
                     <h1 className="auth__heading">Sign Up</h1>
                     <p className="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
@@ -95,7 +95,7 @@ export default function SignUp() {
 
                     <p className="auth__text">
                         You have an account yet?
-                        <a href="./sign-in.html" className="auth__link">
+                        <a href="./sign-in.html" className="auth__link auth__text-link">
                             Sign In
                         </a>
                     </p>

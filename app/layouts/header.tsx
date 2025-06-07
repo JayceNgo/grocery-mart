@@ -1,4 +1,3 @@
-
 // Component Header được định nghĩa
 export default function Header() {
     return (
@@ -10,9 +9,9 @@ export default function Header() {
                 </button>
 
                 {/* <!-- Logo --> */}
-                <a href="./" className="logo">
-                    <img src="/icons/logo.svg" alt="hiepgrocery" className="logo__img" />
-                    <h1 className="logo__title">HiepGrocery</h1>
+                <a href="./" className="logo top-bar__logo">
+                    <img src="/icons/logo.svg" alt="hiepgrocery" className="logo__img top-bar__logo-img" />
+                    <h1 className="logo__title top-bar__logo-title">HiepGrocery</h1>
                 </a>
 
                 {/* <!-- Navbar --> */}

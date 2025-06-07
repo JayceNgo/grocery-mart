@@ -6,7 +6,7 @@ export default function Footer() {
                 <div className="footer__col">
                     {/* <!-- Logo --> */}
                     <a href="./" className="logo footer__logo">
-                        <img src="/icons/logo.svg" alt="grocerymart" className="logo__img" />
+                        <img src="/icons/logo.svg" alt="hiepgrocery" className="logo__img" />
                         <h1 className="logo__title"> HiepGrocery</h1>
                     </a>
                     <p className="footer__desc">
