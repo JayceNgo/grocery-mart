@@ -1,15 +1,24 @@
+import { useEffect } from "react";
+
 export default function SignUp() {
     return (
         <main className="auth">
             {/* <!-- Auth intro --> */}
             <div className="auth__intro">
+                <a href="./" className="logo auth__intro-logo d-none d-md-flex">
+                    <img src="/icons/logo.svg" alt="grocerymart" className="logo__img" />
+                    <h1 className="logo__title">grocerymart</h1>
+                </a>
                 <img src="/img/auth/intro.svg" alt="" className="auth__intro-img" />
                 <p className="auth__intro-text">
                     The best of luxury brand values, high quality products, and innovative services
                 </p>
+                <button className="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth-content">
+                    <img src="/img/auth/intro-arrow.svg" alt="" />
+                </button>
             </div>
             {/* <!-- Auth content --> */}
-            <div className="auth__content">
+            <div id="auth-content" className="auth__content hide">
                 <div className="auth__content-inner">
                     {/* <!-- Logo --> */}
                     <a href="./" className="logo">
@@ -18,7 +27,7 @@ export default function SignUp() {
                     </a>
                     <h1 className="auth__heading">Sign Up</h1>
                     <p className="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
-                    <form action="" className="form auth__form">
+                    <form action="/home-logined" className="form auth__form">
                         <div className="form__group">
                             <div className="form__text-input">
                                 <input type="email" name="" id="" placeholder="Email" className="form__input" />
