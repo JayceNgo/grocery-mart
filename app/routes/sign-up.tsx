@@ -27,7 +27,7 @@ export default function SignUp() {
                     </a>
                     <h1 className="auth__heading">Sign Up</h1>
                     <p className="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
-                    <form action="./index-logined.html" className="form auth__form">
+                    <form action="./home-logined" className="form auth__form">
                         <div className="form__group">
                             <div className="form__text-input">
                                 <input
