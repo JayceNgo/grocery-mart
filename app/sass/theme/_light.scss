@@ -40,8 +40,11 @@ html {
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg: #f8f8fb;
 
-    // AuthAdd commentMore actions
+    // Auth
     --auth-content-bg: #fff;
+
+    // Forms
+    --form-placeholder-color: #d2d1d6;
 
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
@@ -50,5 +53,6 @@ html {
 
     @include abstracts.screen(md) {
         --cate-item-bg: #fff;
+        --auth-intro-bg: #fff;
     }
 }

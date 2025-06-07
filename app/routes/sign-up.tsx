@@ -35,6 +35,7 @@ export default function SignUp() {
                                     name=""
                                     id=""
                                     placeholder="Email"
+                                    value="admin@grocerymart.com"
                                     className="form__input"
                                     required
                                 />
@@ -51,6 +52,7 @@ export default function SignUp() {
                                     id=""
                                     placeholder="Password"
                                     className="form__input"
+                                    value="11111111"
                                     required
                                     minLength={6}
                                 />
@@ -67,6 +69,7 @@ export default function SignUp() {
                                     id=""
                                     placeholder="Confirm password"
                                     className="form__input"
+                                    value="11111111"
                                     required
                                     minLength={6}
                                 />
@@ -87,7 +90,7 @@ export default function SignUp() {
                         <div className="form__group auth__btn-group">
                             <button className="btn btn--primary auth__btn form__submit-btn">Sign Up</button>
                             <button className="btn btn--outline auth__btn btn--no-margin">
-                                <img src="/icons/google.svg" alt="" className="btn__icon" />
+                                <img src="/icons/google.svg" alt="" className="btn__icon icon" />
                                 Sign in with Google
                             </button>
                         </div>
@@ -95,8 +98,8 @@ export default function SignUp() {
 
                     <p className="auth__text">
                         You have an account yet?
-                        <a href="./sign-in.html" className="auth__link auth__text-link">
-                            Sign In
+                        <a href="/sign-in" className="auth__link auth__text-link">
+                            Sign In with Google
                         </a>
                     </p>
                 </div>
