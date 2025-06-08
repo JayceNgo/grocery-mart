@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
-import Header from "./layouts/header";
-import Footer from "./layouts/footer";
 import type { Route } from "./+types/root";
 import "./css/app.css";
 export const links: Route.LinksFunction = () => [
@@ -33,7 +31,7 @@ export function meta({}: Route.MetaArgs) {
 }
 export function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className="dark">
+        <html lang="en" className="">
             <head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

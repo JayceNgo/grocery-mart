@@ -251,7 +251,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-1.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -260,7 +260,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Coffee Beans - Espresso Arabica and Robusta Beans</a>
+                                        <a href="/product-detail">Coffee Beans - Espresso Arabica and Robusta Beans</a>
                                     </h3>
                                     <p className="product-card__brand">Lavazza</p>
                                     <div className="product-card__row">
@@ -275,7 +275,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-2.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -284,7 +284,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Lavazza Coffee Blends - Try the Italian Espresso</a>
+                                        <a href="/product-detail">Lavazza Coffee Blends - Try the Italian Espresso</a>
                                     </h3>
                                     <p className="product-card__brand">Lavazza</p>
                                     <div className="product-card__row">
@@ -299,7 +299,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-3.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn like-btn--liked product-card__like-btn">
@@ -308,7 +308,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Lavazza - Caffè Espresso Black Tin - Ground coffee</a>
+                                        <a href="/product-detail">Lavazza - Caffè Espresso Black Tin - Ground coffee</a>
                                     </h3>
                                     <p className="product-card__brand">Welikecoffee</p>
                                     <div className="product-card__row">
@@ -323,7 +323,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-4.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -332,7 +332,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Qualità Oro Mountain Grown - Espresso Coffee Beans</a>
+                                        <a href="/product-detail">Qualità Oro Mountain Grown - Espresso Coffee Beans</a>
                                     </h3>
                                     <p className="product-card__brand">Lavazza</p>
                                     <div className="product-card__row">
@@ -347,7 +347,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-5.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -356,7 +356,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">EarlyBird Want to Sleep - Espresso Coffee Beans</a>
+                                        <a href="/product-detail">EarlyBird Want to Sleep - Espresso Coffee Beans</a>
                                     </h3>
                                     <p className="product-card__brand">FilterKaffee</p>
                                     <div className="product-card__row">
@@ -371,7 +371,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-6.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -380,7 +380,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Partners coffee - Roasters Coffee New York</a>
+                                        <a href="/product-detail">Partners coffee - Roasters Coffee New York</a>
                                     </h3>
                                     <p className="product-card__brand">Brooklyn</p>
                                     <div className="product-card__row">
@@ -395,7 +395,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-7.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -404,7 +404,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">BattleCreek Coffe - Decaf coffee beans</a>
+                                        <a href="/product-detail">BattleCreek Coffe - Decaf coffee beans</a>
                                     </h3>
                                     <p className="product-card__brand">Columbia</p>
                                     <div className="product-card__row">
@@ -419,7 +419,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-8.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -428,7 +428,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Buna Café rico - Los Pajaritos coffee</a>
+                                        <a href="/product-detail">Buna Café rico - Los Pajaritos coffee</a>
                                     </h3>
                                     <p className="product-card__brand">Los Pajaritos</p>
                                     <div className="product-card__row">
@@ -443,7 +443,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img src="/img/product/item-9.png" alt="" className="product-card__thumb" />
                                         </a>
                                         <button className="like-btn product-card__like-btn">
@@ -452,7 +452,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Fiddle Heads - Costa rica Coffee Beans</a>
+                                        <a href="/product-detail">Fiddle Heads - Costa rica Coffee Beans</a>
                                     </h3>
                                     <p className="product-card__brand">Costa Rica</p>
                                     <div className="product-card__row">
@@ -467,7 +467,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img
                                                 src="/img/product/item-10.png"
                                                 alt=""
@@ -480,7 +480,9 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Never settle for good enough - Roasted Coffee Beans</a>
+                                        <a href="/product-detail">
+                                            Never settle for good enough - Roasted Coffee Beans
+                                        </a>
                                     </h3>
                                     <p className="product-card__brand">Small-Batch</p>
                                     <div className="product-card__row">
@@ -495,7 +497,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img
                                                 src="/img/product/item-11.png"
                                                 alt=""
@@ -508,7 +510,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">211 Bird Free - Medium Roast Coffee Beans</a>
+                                        <a href="/product-detail">211 Bird Free - Medium Roast Coffee Beans</a>
                                     </h3>
                                     <p className="product-card__brand">Guatemala</p>
                                     <div className="product-card__row">
@@ -523,7 +525,7 @@ export default function Home() {
                             <div className="col">
                                 <article className="product-card">
                                     <div className="product-card__img-wrap">
-                                        <a href="#!">
+                                        <a href="/product-detail">
                                             <img
                                                 src="/img/product/item-12.png"
                                                 alt=""
@@ -536,7 +538,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                     <h3 className="product-card__title">
-                                        <a href="#!">Olympic Coffee - Espresso Coffee Beans</a>
+                                        <a href="/product-detail">Olympic Coffee - Espresso Coffee Beans</a>
                                     </h3>
                                     <p className="product-card__brand">San Sebastian</p>
                                     <div className="product-card__row">
