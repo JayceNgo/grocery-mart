@@ -53,15 +53,15 @@ export default function SignIn() {
                                 <img src="/icons/lock.svg" alt="" className="form__input-icon" />
                                 <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                             </div>
-                            <p className="form__error">assword should has at least 6 words</p>
+                            <p className="form__error">Password should has at least 6 words</p>
                         </div>
                         <div className="form__group form__group--inline">
                             <label className="form__checkbox">
                                 <input type="checkbox" name="" id="" className="form__checkbox-input d-none" />
                                 <span className="form__checkbox-label">Set as default card</span>
                             </label>
-                            <a href="#!" className="auth__link form__pull-right">
-                                Recovery Password
+                            <a href="/reset-pass" className="auth__link form__pull-right">
+                                Forgot password?
                             </a>
                         </div>
                         <div className="form__group auth__btn-group">

@@ -83,9 +83,6 @@ export default function SignUp() {
                                 <input type="checkbox" name="" id="" className="form__checkbox-input d-none" />
                                 <span className="form__checkbox-label">Set as default card</span>
                             </label>
-                            <a href="#!" className="auth__link form__pull-right">
-                                Recovery Password
-                            </a>
                         </div>
                         <div className="form__group auth__btn-group">
                             <button className="btn btn--primary auth__btn form__submit-btn">Sign Up</button>
