@@ -3,12 +3,7 @@ export default function ResetPassword() {
         <main className="auth">
             {/* <!-- Auth intro --> */}
             <div className="auth__intro d-md-none">
-                <img
-                    src="/img/auth/forgot-password.png"
-                    alt=""
-                    className="auth__intro-img"
-                    style={{ ["--width" as any]: "424px" }}
-                />
+                <img src="/img/auth/forgot-password.png" alt="" className="auth__intro-img" />
             </div>
 
             {/* <!-- Auth content --> */}

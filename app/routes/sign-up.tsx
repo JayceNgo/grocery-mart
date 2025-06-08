@@ -59,7 +59,7 @@ export default function SignUp() {
                                 <img src="/icons/lock.svg" alt="" className="form__input-icon" />
                                 <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                             </div>
-                            <p className="form__error">Password should has at least 6 words</p>
+                            <p className="form__error">Password should has at least 6 characters</p>
                         </div>
                         <div className="form__group">
                             <div className="form__text-input">
@@ -76,7 +76,7 @@ export default function SignUp() {
                                 <img src="/icons/lock.svg" alt="" className="form__input-icon" />
                                 <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                             </div>
-                            <p className="form__error">Password should has at least 6 words</p>
+                            <p className="form__error">Password should has at least 6 characters</p>
                         </div>
                         <div className="form__group form__group--inline">
                             <label className="form__checkbox">

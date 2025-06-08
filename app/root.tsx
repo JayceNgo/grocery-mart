@@ -27,7 +27,7 @@ export function meta({}: Route.MetaArgs) {
         {
             name: "description",
             content:
-                "Welcome to HiepNgo Grocery! Đây là một sản phẩm dự án cá nhân về một trang web bán hàng. Với sự phong phú về mặt thẩm mĩ. Chúng tôi cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Hãy cùng khám phá và mua sắm ngay hôm nay!",
+                "Welcome to HiepNgo Grocery! This is a personal project product about a sales website. With aesthetic richness. We provide high quality products at reasonable prices. Let's explore and shop today!",
         },
     ];
 }
