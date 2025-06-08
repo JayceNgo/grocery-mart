@@ -69,9 +69,39 @@ export default function ProductDetail() {
                                 </div>
                             </div>
                             <div className="col-7">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dicta placeat officiis
-                                ea, accusamus nisi ab similique quisquam alias, repellendus consectetur asperiores
-                                excepturi quas sed repellat perferendis sint modi distinctio.
+                                <section className="prod-info">
+                                    <h1 className="prod-info__heading">
+                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                    </h1>
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <div className="prod-prop">
+                                                <img src="/icons/star.svg" alt="" className="prod-prop__icon" />
+                                                <h4 className="prod-prop__title">(3.5) 1100 reviews</h4>
+                                            </div>
+                                        </div>
+                                        <div className="col-6">
+                                            <div className="prod-prop">
+                                                <img src="/icons/document.svg" alt="" className="prod-prop__icon" />
+                                                <h4 className="prod-prop__title">Compare</h4>
+                                            </div>
+                                            <div className="prod-prop">
+                                                <img src="/icons/buy.svg" alt="" className="prod-prop__icon" />
+                                                <div>
+                                                    <h4 className="prod-prop__title">Delivery</h4>
+                                                    <p className="prod-prop__desc">From $6 for 1-3 days</p>
+                                                </div>
+                                            </div>
+                                            <div className="prod-prop">
+                                                <img src="/icons/bag.svg" alt="" className="prod-prop__icon" />
+                                                <div>
+                                                    <h4 className="prod-prop__title">Pickup</h4>
+                                                    <p className="prod-prop__desc">Out of 2 store, today</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
