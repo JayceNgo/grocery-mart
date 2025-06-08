@@ -60,7 +60,7 @@ export default function SignIn() {
                                 <input type="checkbox" name="" id="" className="form__checkbox-input d-none" />
                                 <span className="form__checkbox-label">Set as default card</span>
                             </label>
-                            <a href="/reset-pass" className="auth__link form__pull-right">
+                            <a href="/reset-password" className="auth__link form__pull-right">
                                 Forgot password?
                             </a>
                         </div>

@@ -5,6 +5,6 @@ export default [
     route("sign-in", "routes/sign-in.tsx"),
     route("sign-up", "routes/sign-up.tsx"),
     route("home-logined", "routes/home-logined.tsx"),
-    route("reset-pass", "routes/reset-password.tsx"),
-    route("reset-pass-emailed", "routes/reset-password-emailed.tsx"),
+    route("reset-password", "routes/reset-password.tsx"),
+    route("reset-password-emailed", "routes/reset-password-emailed.tsx"),
 ] satisfies RouteConfig;

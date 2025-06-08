@@ -23,7 +23,7 @@ export default function ResetPassword() {
                     {/* <div className="auth__message message message--success">
                         We have e-mailed your password reset link!
                     </div> */}
-                    <form action="/reset-pass-emailed" className="form auth__form auth__form-forgot">
+                    <form action="/reset-password-emailed" className="form auth__form auth__form-forgot">
                         <div className="form__group">
                             <div className="form__text-input">
                                 <input
