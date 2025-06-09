@@ -40,7 +40,7 @@ export default function ProductDetail() {
                     {/* <!-- Product info --> */}
                     <div className="product-container">
                         <div className="row">
-                            <div className="col-5">
+                            <div className="col-5 col-xl-6 col-lg-12">
                                 <div className="prod-preview">
                                     <div className="prod-preview__list">
                                         <div className="prod-preview__item">
@@ -68,14 +68,14 @@ export default function ProductDetail() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-7">
+                            <div className="col-7 col-xl-6 col-lg-12">
                                 <form action="" className="form">
                                     <section className="prod-info">
                                         <h1 className="prod-info__heading">
                                             Coffee Beans - Espresso Arabica and Robusta Beans
                                         </h1>
                                         <div className="row">
-                                            <div className="col-5">
+                                            <div className="col-5 col-xxl-6 col-xl-12">
                                                 <div className="prod-prop">
                                                     <img src="/icons/star.svg" alt="" className="prod-prop__icon" />
                                                     <h4 className="prod-prop__title">(3.5) 1100 reviews</h4>
@@ -114,7 +114,7 @@ export default function ProductDetail() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-7">
+                                            <div className="col-7 col-xxl-6 col-xl-12">
                                                 <div className="prod-props">
                                                     <div className="prod-prop">
                                                         <img
