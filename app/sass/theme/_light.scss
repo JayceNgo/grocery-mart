@@ -59,6 +59,9 @@ html {
     // Search bar
     --search-bar-bg: #fff;
 
+    // Review card
+    --review-card-bg: #fafafd;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.4);
