@@ -38,7 +38,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* <!-- Product info --> */}
-                    <div className="product-container">
+                    <div className="product-container prod-info-content">
                         <div className="row">
                             <div className="col-5 col-xl-6 col-lg-12">
                                 <div className="prod-preview">
