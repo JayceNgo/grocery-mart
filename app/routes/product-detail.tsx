@@ -8,6 +8,21 @@ export default function ProductDetail() {
             </header>
             <main className="product-page">
                 <div className="container">
+                    {/* <!-- Search bar --> */}
+                    <div className="product-container">
+                        <div className="search-bar d-none d-md-flex">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Search for item"
+                                className="search-bar__input"
+                            />
+                            <button className="search-bar__submit">
+                                <img src="./assets/icons/search.svg" alt="" className="search-bar__icon icon" />
+                            </button>
+                        </div>
+                    </div>
                     {/* <!-- Breadcrumbs --> */}
                     <div className="product-container">
                         <ul className="breadcrumbs">
@@ -120,19 +135,27 @@ export default function ProductDetail() {
                                                         <img
                                                             src="/icons/document.svg"
                                                             alt=""
-                                                            className="prod-prop__icon"
+                                                            className="prod-prop__icon icon"
                                                         />
                                                         <h4 className="prod-prop__title">Compare</h4>
                                                     </div>
                                                     <div className="prod-prop">
-                                                        <img src="/icons/buy.svg" alt="" className="prod-prop__icon" />
+                                                        <img
+                                                            src="/icons/buy.svg"
+                                                            alt=""
+                                                            className="prod-prop__icon icon"
+                                                        />
                                                         <div>
                                                             <h4 className="prod-prop__title">Delivery</h4>
                                                             <p className="prod-prop__desc">From $6 for 1-3 days</p>
                                                         </div>
                                                     </div>
                                                     <div className="prod-prop">
-                                                        <img src="/icons/bag.svg" alt="" className="prod-prop__icon" />
+                                                        <img
+                                                            src="/icons/bag.svg"
+                                                            alt=""
+                                                            className="prod-prop__icon icon"
+                                                        />
                                                         <div>
                                                             <h4 className="prod-prop__title">Pickup</h4>
                                                             <p className="prod-prop__desc">Out of 2 store, today</p>

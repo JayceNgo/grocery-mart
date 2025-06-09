@@ -49,10 +49,15 @@ html {
     // Product detail
     --product-detail-bg: #fff;
     --product-detail-info-bg: #f6f6f6;
+    --product-detail-info-content-bg: #fff;
+    --product-detail-tag-bg: #ededf6;
 
     // Breadcrumbs
     --breadcrumbs-bg: #f6f6f6;
     --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+
+    // Search bar
+    --search-bar-bg: #fff;
 
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
