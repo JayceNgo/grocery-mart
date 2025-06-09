@@ -108,9 +108,9 @@ export default function ProductDetail() {
                                                 </div>
                                                 <div className="filter__form-group">
                                                     <div className="form__tags">
-                                                        <button className="form__tag">Small</button>
-                                                        <button className="form__tag">Medium</button>
-                                                        <button className="form__tag">Large</button>
+                                                        <button className="form__tag prod-info__tag">Small</button>
+                                                        <button className="form__tag prod-info__tag">Medium</button>
+                                                        <button className="form__tag prod-info__tag">Large</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,6 +136,30 @@ export default function ProductDetail() {
                                                         <div>
                                                             <h4 className="prod-prop__title">Pickup</h4>
                                                             <p className="prod-prop__desc">Out of 2 store, today</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="prod-info__card">
+                                                        <div className="prod-info__row">
+                                                            <span className="prod-info__price">$500.00</span>
+                                                            <span className="prod-info__tax">10%</span>
+                                                        </div>
+                                                        <p className="prod-info__total-price">$540.00</p>
+                                                        <div className="prod-info__row">
+                                                            <button className="btn btn--primary prod-info__add-to-cart">
+                                                                Add to cart
+                                                            </button>
+                                                            <button className="like-btn prod-info__like-btn">
+                                                                <img
+                                                                    src="/icons/heart.svg"
+                                                                    alt=""
+                                                                    className="like-btn__icon icon"
+                                                                />
+                                                                <img
+                                                                    src="/icons/heart-red.svg"
+                                                                    alt=""
+                                                                    className="like-btn__icon--liked"
+                                                                />
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
