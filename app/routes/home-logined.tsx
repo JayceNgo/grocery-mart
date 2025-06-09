@@ -98,11 +98,11 @@ export default function HomeLogined() {
                                 <div id="home-filter" className="filter hide">
                                     <img src="/icons/arrow-up.png" alt="" className="filter__arrow" />
                                     <h3 className="filter__heading">Filter</h3>
-                                    <form action="" className="filter__form">
+                                    <form action="" className="filter__form form">
                                         <div className="filter__row filter__content">
                                             {/* <!-- Filter column 1 --> */}
                                             <div className="filter__col">
-                                                <label htmlFor="" className="filter__form-label">
+                                                <label htmlFor="" className="form__label">
                                                     Price
                                                 </label>
                                                 <div className="filter__form-group">
@@ -118,10 +118,7 @@ export default function HomeLogined() {
                                                 </div>
                                                 <div className="filter__form-group filter__form-group--inline">
                                                     <div>
-                                                        <label
-                                                            htmlFor=""
-                                                            className="filter__form-label filter__form-label--small"
-                                                        >
+                                                        <label htmlFor="" className="form__label form__label--small">
                                                             Minimum
                                                         </label>
                                                         <div className="filter__form-text-input filter__form-text-input--small">
@@ -136,10 +133,7 @@ export default function HomeLogined() {
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <label
-                                                            htmlFor=""
-                                                            className="filter__form-label filter__form-label--small"
-                                                        >
+                                                        <label htmlFor="" className="form__label form__label--small">
                                                             Maximum
                                                         </label>
                                                         <div className="filter__form-text-input filter__form-text-input--small">
@@ -160,37 +154,37 @@ export default function HomeLogined() {
 
                                             {/* <!-- Filter column 2 --> */}
                                             <div className="filter__col">
-                                                <label htmlFor="" className="filter__form-label">
+                                                <label htmlFor="" className="form__label">
                                                     Size/Weight
                                                 </label>
                                                 <div className="filter__form-group">
-                                                    <div className="filter__form-select-wrap">
+                                                    <div className="form__select-wrap">
                                                         <div
-                                                            className="filter__form-select"
+                                                            className="form__select"
                                                             style={{ "--width": "158px" } as React.CSSProperties}
                                                         >
                                                             500g
                                                             <img
                                                                 src="/icons/select-arrow.svg"
                                                                 alt=""
-                                                                className="filter__form-select-arrow icon"
+                                                                className="form__select-arrow icon"
                                                             />
                                                         </div>
-                                                        <div className="filter__form-select">
+                                                        <div className="form__select">
                                                             Gram
                                                             <img
                                                                 src="/icons/select-arrow.svg"
                                                                 alt=""
-                                                                className="filter__form-select-arrow icon"
+                                                                className="form__select-arrow icon"
                                                             />
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="filter__form-group">
-                                                    <div className="filter__form-tags">
-                                                        <button className="filter__form-tag">Small</button>
-                                                        <button className="filter__form-tag">Medium</button>
-                                                        <button className="filter__form-tag">Large</button>
+                                                    <div className="form__tags">
+                                                        <button className="form__tag">Small</button>
+                                                        <button className="form__tag">Medium</button>
+                                                        <button className="form__tag">Large</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,7 +193,7 @@ export default function HomeLogined() {
 
                                             {/* <!-- Filter column 3 --> */}
                                             <div className="filter__col">
-                                                <label htmlFor="" className="filter__form-label">
+                                                <label htmlFor="" className="form__label">
                                                     Brand
                                                 </label>
                                                 <div className="filter__form-group">
@@ -219,10 +213,10 @@ export default function HomeLogined() {
                                                     </div>
                                                 </div>
                                                 <div className="filter__form-group">
-                                                    <div className="filter__form-tags">
-                                                        <button className="filter__form-tag">Lavazza</button>
-                                                        <button className="filter__form-tag">Nescafe</button>
-                                                        <button className="filter__form-tag">Starbucks</button>
+                                                    <div className="form__tags">
+                                                        <button className="form__tag">Lavazza</button>
+                                                        <button className="form__tag">Nescafe</button>
+                                                        <button className="form__tag">Starbucks</button>
                                                     </div>
                                                 </div>
                                             </div>
