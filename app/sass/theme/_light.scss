@@ -62,6 +62,9 @@ html {
     // Review card
     --review-card-bg: #fafafd;
 
+    // Text content
+    --text-content-hr-bg: #ebebeb;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.4);
@@ -73,5 +76,6 @@ html {
         --product-detail-bg: #fafafd;
         --product-detail-info-bg: #fff;
         --breadcrumbs-bg: #fff;
+        --review-card-bg: #fff;
     }
 }
