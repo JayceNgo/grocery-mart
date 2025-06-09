@@ -186,18 +186,43 @@ export default function App() {
             });
         };
 
+        // Handle tab switching functionality
+        const initTabs = () => {
+            const tabsSelector = "prod-tab__item";
+            const contentsSelector = "prod-tab__content";
+
+            const tabActive = `${tabsSelector}--current`;
+            const contentActive = `${contentsSelector}--current`;
+
+            const tabContainers = $$(".js-tabs");
+            tabContainers.forEach((tabContainer) => {
+                const tabs = tabContainer.querySelectorAll(`.${tabsSelector}`);
+                const contents = tabContainer.querySelectorAll(`.${contentsSelector}`);
+                tabs.forEach((tab, index) => {
+                    (tab as HTMLElement).onclick = () => {
+                        tabContainer.querySelector(`.${tabActive}`)?.classList.remove(tabActive);
+                        tabContainer.querySelector(`.${contentActive}`)?.classList.remove(contentActive);
+                        tab.classList.add(tabActive);
+                        contents[index].classList.add(contentActive);
+                    };
+                });
+            });
+        };
+
         // Register event listeners
         window.addEventListener("resize", calArrowPos);
         window.addEventListener("template-loaded", calArrowPos);
         window.addEventListener("template-loaded", handleActiveMenu);
         window.addEventListener("template-loaded", initJsToggle);
         window.addEventListener("template-loaded", initDropdownClick); //  Added listener
+        window.addEventListener("template-loaded", initTabs);
 
         // Run on component mount
         calArrowPos();
         handleActiveMenu();
         initJsToggle();
         initDropdownClick(); //  Run once on mount
+        initTabs();
 
         // Clean up event listeners on component unmount
         return () => {
@@ -206,6 +231,7 @@ export default function App() {
             window.removeEventListener("template-loaded", handleActiveMenu);
             window.removeEventListener("template-loaded", initJsToggle);
             window.removeEventListener("template-loaded", initDropdownClick); //  Clean up
+            window.removeEventListener("template-loaded", initTabs);
         };
     }, []);
     return (

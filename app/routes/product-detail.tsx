@@ -195,7 +195,7 @@ export default function ProductDetail() {
                     </div>
                     {/* <!-- Product content --> */}
                     <div className="product-container">
-                        <div className="prod-tab">
+                        <div className="prod-tab js-tabs">
                             <ul className="prod-tab__list">
                                 {/* We can add prod-tab__item--current to prod-tab__item to make it focus  */}
                                 <li className="prod-tab__item prod-tab__item--current">Description</li>
@@ -205,7 +205,7 @@ export default function ProductDetail() {
                             <div className="prod-tab__contents">
                                 <div className="prod-tab__content prod-tab__content--current">
                                     <div className="row">
-                                        <div className="col-8 offset-2">
+                                        <div className="col-8 offset-2 col-xl-10 offset-xl-1 col-lg-12 offset-lg-0">
                                             <div className="text-content">
                                                 <h2>Lorem ipsum dolor sit amet.</h2>
                                                 <p>
@@ -307,7 +307,7 @@ export default function ProductDetail() {
                                 <div className="prod-tab__content">
                                     <div className="prod-content">
                                         <h2 className="prod-content__heading">What our customers are saying</h2>
-                                        <div className="row row-cols-3">
+                                        <div className="row row-cols-3 gx-lg-2 row-cols-md-1 gy-md-3">
                                             {/* <!-- Review card 1 --> */}
                                             <div className="col">
                                                 <div className="review-card">
@@ -325,31 +325,34 @@ export default function ProductDetail() {
                                                         </div>
                                                     </div>
                                                     <div className="review-card__rating">
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-half.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-blank.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
+                                                        <div className="review-card__star-list">
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-half.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-blank.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                        </div>
+
                                                         <span className="review-card__rating-title">(3.5) Review</span>
                                                     </div>
                                                 </div>
@@ -372,31 +375,34 @@ export default function ProductDetail() {
                                                         </div>
                                                     </div>
                                                     <div className="review-card__rating">
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-half.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-blank.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
+                                                        <div className="review-card__star-list">
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-half.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-blank.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                        </div>
+
                                                         <span className="review-card__rating-title">(3.5) Review</span>
                                                     </div>
                                                 </div>
@@ -419,31 +425,34 @@ export default function ProductDetail() {
                                                         </div>
                                                     </div>
                                                     <div className="review-card__rating">
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-half.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
-                                                        <img
-                                                            src="/icons/star-blank.svg"
-                                                            alt=""
-                                                            className="review-card__star"
-                                                        />
+                                                        <div className="review-card__star-list">
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-half.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                            <img
+                                                                src="/icons/star-blank.svg"
+                                                                alt=""
+                                                                className="review-card__star"
+                                                            />
+                                                        </div>
+
                                                         <span className="review-card__rating-title">(3.5) Review</span>
                                                     </div>
                                                 </div>
