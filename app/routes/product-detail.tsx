@@ -199,13 +199,13 @@ export default function ProductDetail() {
                             <ul className="prod-tab__list">
                                 <li className="prod-tab__item">Description</li>
                                 <li className="prod-tab__item">Features</li>
-                                <li className="prod-tab__item prod-tab__item--current">Review (1100)</li>
-                                <li className="prod-tab__item">Similar</li>
+                                <li className="prod-tab__item">Review (1100)</li>
+                                <li className="prod-tab__item prod-tab__item--current">Similar</li>
                             </ul>
                             <div className="prod-tab__contents">
                                 <div className="prod-tab__content">Content 1</div>
                                 <div className="prod-tab__content">Content 2</div>
-                                <div className="prod-tab__content prod-tab__content--current">
+                                <div className="prod-tab__content">
                                     <div className="prod-content">
                                         <h2 className="prod-content__heading">What our customers are saying</h2>
                                         <div className="row row-cols-3">
@@ -352,7 +352,516 @@ export default function ProductDetail() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="prod-tab__content">Content 4</div>
+                                <div className="prod-tab__content prod-tab__content--current">
+                                    <div className="prod-content">
+                                        <h2 className="prod-content__heading">Similar items you might like</h2>
+                                        <div className="row row-cols-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+                                            {/* <!-- Product card 1 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="/img/product/item-1.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="./product-detail.html">
+                                                            Coffee Beans - Espresso Arabica and Robusta Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Lavazza</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$47.00</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.3</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 2 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="/img/product/item-2.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="./product-detail.html">
+                                                            Lavazza Coffee Blends - Try the Italian Espresso
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Lavazza</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$53.00</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">3.4</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 3 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="/img/product/item-3.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn like-btn--liked product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="./product-detail.html">
+                                                            Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Welikecoffee</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$99.99</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">5.0</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 4 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="/img/product/item-4.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="./product-detail.html">
+                                                            Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Lavazza</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$38.65</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.4</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 5 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-5.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            EarlyBird Want to Sleep - Espresso Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">FilterKaffee</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$48.65</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">3.2</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 6 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-6.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            Partners coffee - Roasters Coffee New York
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Brooklyn</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$21.55</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.8</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 7 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-7.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            BattleCreek Coffe - Decaf coffee beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Columbia</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$19.25</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">2.7</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 8 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-8.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            Buna Café rico - Los Pajaritos coffee
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Los Pajaritos</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$38.65</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.4</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 9 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-9.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            Fiddle Heads - Costa rica Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Costa Rica</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$68.65</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">3.9</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 10 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-10.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            Never settle for good enough - Roasted Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Small-Batch</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$36.25</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.2</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 11 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-11.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            211 Bird Free - Medium Roast Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">Guatemala</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$18.65</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.0</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            {/* <!-- Product card 12 --> */}
+                                            <div className="col">
+                                                <article className="product-card">
+                                                    <div className="product-card__img-wrap">
+                                                        <a href="/product-detail">
+                                                            <img
+                                                                src="/img/product/item-12.png"
+                                                                alt=""
+                                                                className="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <button className="like-btn product-card__like-btn">
+                                                            <img
+                                                                src="/icons/heart.svg"
+                                                                alt=""
+                                                                className="like-btn__icon icon"
+                                                            />
+                                                            <img
+                                                                src="/icons/heart-red.svg"
+                                                                alt=""
+                                                                className="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                    <h3 className="product-card__title">
+                                                        <a href="/product-detail">
+                                                            Olympic Coffee - Espresso Coffee Beans
+                                                        </a>
+                                                    </h3>
+                                                    <p className="product-card__brand">San Sebastian</p>
+                                                    <div className="product-card__row">
+                                                        <span className="product-card__price">$28.5</span>
+                                                        <img
+                                                            src="/icons/star.svg"
+                                                            alt=""
+                                                            className="product-card__star"
+                                                        />
+                                                        <span className="product-card__score">4.9</span>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
