@@ -197,14 +197,113 @@ export default function ProductDetail() {
                     <div className="product-container">
                         <div className="prod-tab">
                             <ul className="prod-tab__list">
-                                <li className="prod-tab__item">Description</li>
-                                <li className="prod-tab__item">Features</li>
+                                {/* We can add prod-tab__item--current to prod-tab__item to make it focus  */}
+                                <li className="prod-tab__item prod-tab__item--current">Description</li>
                                 <li className="prod-tab__item">Review (1100)</li>
-                                <li className="prod-tab__item prod-tab__item--current">Similar</li>
+                                <li className="prod-tab__item ">Similar</li>
                             </ul>
                             <div className="prod-tab__contents">
-                                <div className="prod-tab__content">Content 1</div>
-                                <div className="prod-tab__content">Content 2</div>
+                                <div className="prod-tab__content prod-tab__content--current">
+                                    <div className="row">
+                                        <div className="col-8 offset-2">
+                                            <div className="text-content">
+                                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet <a href="#!">consectetur</a> adipisicing
+                                                    elit. Aliquid, cupiditate. Modi, quidem, ullam sint dolorum
+                                                    recusandae voluptates dignissimos similique animi assumenda
+                                                    <a href="#!">praesentium</a> et! Illum dolorem est rem voluptas nam!
+                                                    Voluptatem.
+                                                </p>
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    <img src="/img/product/item-1.png" alt="" />
+                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
+                                                </p>
+                                                <blockquote>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet <em>consectetur</em>
+                                                        <u>adipisicing</u> elit. Aliquid, cupiditate. Modi, quidem,
+                                                        ullam sint dolorum recusandae voluptates dignissimos similique
+                                                        animi assumenda praesentium et! Illum dolorem est rem voluptas
+                                                        nam! Voluptatem.
+                                                    </p>
+                                                </blockquote>
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+
+                                                <hr />
+
+                                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    <img src="/img/product/item-1.png" alt="" />
+                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+
+                                                <hr />
+
+                                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                                <p>
+                                                    <img src="/img/product/item-1.png" alt="" />
+                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
+                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
+                                                    est rem voluptas nam! Voluptatem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div className="prod-tab__content">
                                     <div className="prod-content">
                                         <h2 className="prod-content__heading">What our customers are saying</h2>
@@ -352,7 +451,7 @@ export default function ProductDetail() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="prod-tab__content prod-tab__content--current">
+                                <div className="prod-tab__content">
                                     <div className="prod-content">
                                         <h2 className="prod-content__heading">Similar items you might like</h2>
                                         <div className="row row-cols-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
