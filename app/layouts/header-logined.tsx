@@ -5975,13 +5975,16 @@ export default function Header() {
 
                         <div className="top-act__separate"></div>
 
-                        <button className="top-act__btn">
-                            <img src="/icons/buy.svg" alt="" className="icon top-act__icon" />
-                            <span className="top-act__title">$65.42</span>
+                        <div className="top-act__btn-wrap">
+                            <button className="top-act__btn">
+                                <img src="/icons/buy.svg" alt="" className="icon top-act__icon" />
+                                <span className="top-act__title">$65.42</span>
+                            </button>
 
                             {/* <!-- Dropdown --> */}
                             <div className="act-dropdown">
                                 <div className="act-dropdown__inner">
+                                    <img src="/icons/arrow-up.png" alt="" className="act-dropdown__arrow" />
                                     <div className="act-dropdown__top">
                                         <h2 className="act-dropdown__title">You have 3 item</h2>
                                         <a href="#!" className="act-dropdown__view-all">
@@ -6036,15 +6039,15 @@ export default function Header() {
                                     </div>
                                     <div className="act-dropdown__bottom">
                                         <div className="act-dropdown__row">
-                                            <span className="act-dropdown__label">Subtotal:</span>
+                                            <span className="act-dropdown__label">Subtotal</span>
                                             <span className="act-dropdown__value">$415.99</span>
                                         </div>
                                         <div className="act-dropdown__row">
-                                            <span className="act-dropdown__label">Texes:</span>
+                                            <span className="act-dropdown__label">Texes</span>
                                             <span className="act-dropdown__value">Free</span>
                                         </div>
                                         <div className="act-dropdown__row">
-                                            <span className="act-dropdown__label">Shipping:</span>
+                                            <span className="act-dropdown__label">Shipping</span>
                                             <span className="act-dropdown__value">$10.00</span>
                                         </div>
                                         <div className="act-dropdown__row act-dropdown__row--bold">
@@ -6062,7 +6065,7 @@ export default function Header() {
                                     </div>
                                 </div>
                             </div>
-                        </button>
+                        </div>
                     </div>
 
                     <div className="top-act__user">
