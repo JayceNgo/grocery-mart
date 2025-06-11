@@ -57,7 +57,7 @@ export default function Payment() {
                     {/* <!-- Checkout content --> */}
                     <div className="checkout-container">
                         <div className="row gy-xl-3">
-                            <div className="col-8 col-xl-12">
+                            <div className="col-8 col-xl-8 col-lg-12">
                                 <div className="cart-info">
                                     <div className="cart-info__top">
                                         <h2 className="cart-info__heading cart-info__heading--lv2">
@@ -71,7 +71,7 @@ export default function Payment() {
 
                                     {/* <!-- Payment item 1 --> */}
                                     <article className="payment-item">
-                                        <div className="payment-item__content">
+                                        <div className="payment-item__info">
                                             <h3 className="payment-item__title">Imran Khan</h3>
                                             <p className="payment-item__desc">
                                                 Museum of Rajas, Sylhet Sadar, Sylhet 3100.
@@ -81,7 +81,7 @@ export default function Payment() {
 
                                     {/* <!-- Payment item 2 --> */}
                                     <article className="payment-item">
-                                        <div className="payment-item__content">
+                                        <div className="payment-item__info">
                                             <h3 className="payment-item__title">Items details</h3>
                                             <p className="payment-item__desc">2 items</p>
                                         </div>
@@ -105,22 +105,23 @@ export default function Payment() {
                                                 className="payment-item__thumb"
                                             />
                                             <div className="payment-item__content">
-                                                <h3 className="payment-item__title">Fedex Delivery</h3>
-                                                <p className="payment-item__desc payment-item__desc--low">
-                                                    Delivery: 2-3 days work
-                                                </p>
+                                                <div className="payment-item__info">
+                                                    <h3 className="payment-item__title">Fedex Delivery</h3>
+                                                    <p className="payment-item__desc payment-item__desc--low">
+                                                        Delivery: 2-3 days work
+                                                    </p>
+                                                </div>
+
+                                                <span className="cart-info__checkbox payment-item__checkbox">
+                                                    <input
+                                                        type="radio"
+                                                        name="delivery-method"
+                                                        className="cart-info__checkbox-input payment-item__checkbox-input"
+                                                        title="Select Fedex Delivery"
+                                                    />
+                                                    <span className="payment-item__cost">Free</span>
+                                                </span>
                                             </div>
-                                            <span className="cart-info__checkbox payment-item__checkbox">
-                                                <input
-                                                    type="radio"
-                                                    name="delivery-method"
-                                                    checked
-                                                    className="cart-info__checkbox-input payment-item__checkbox-input"
-                                                    id="fedex-delivery"
-                                                    title="Select Fedex Delivery"
-                                                />
-                                                <span className="payment-item__cost">Free</span>
-                                            </span>
                                         </article>
                                     </label>
 
@@ -133,20 +134,23 @@ export default function Payment() {
                                                 className="payment-item__thumb"
                                             />
                                             <div className="payment-item__content">
-                                                <h3 className="payment-item__title">DHL Delivery</h3>
-                                                <p className="payment-item__desc payment-item__desc--low">
-                                                    Delivery: 2-3 days work
-                                                </p>
+                                                <div className="payment-item__info">
+                                                    <h3 className="payment-item__title">DHL Delivery</h3>
+                                                    <p className="payment-item__desc payment-item__desc--low">
+                                                        Delivery: 2-3 days work
+                                                    </p>
+                                                </div>
+
+                                                <span className="cart-info__checkbox payment-item__checkbox">
+                                                    <input
+                                                        type="radio"
+                                                        name="delivery-method"
+                                                        className="cart-info__checkbox-input payment-item__checkbox-input"
+                                                        title="Select DHL Delivery"
+                                                    />
+                                                    <span className="payment-item__cost">$12.00</span>
+                                                </span>
                                             </div>
-                                            <span className="cart-info__checkbox payment-item__checkbox">
-                                                <input
-                                                    type="radio"
-                                                    name="delivery-method"
-                                                    className="cart-info__checkbox-input payment-item__checkbox-input"
-                                                    title="Select DHL Delivery"
-                                                />
-                                                <span className="payment-item__cost">$12.00</span>
-                                            </span>
                                         </article>
                                     </label>
                                 </div>
