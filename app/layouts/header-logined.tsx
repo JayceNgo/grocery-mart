@@ -5980,7 +5980,7 @@ export default function Header() {
                                     <img src="/icons/arrow-up.png" alt="" className="act-dropdown__arrow" />
                                     <div className="act-dropdown__top">
                                         <h2 className="act-dropdown__title">You have 3 item(s)</h2>
-                                        <a href="#!" className="act-dropdown__view-all">
+                                        <a href="/favourite" className="act-dropdown__view-all">
                                             See All
                                         </a>
                                     </div>
