@@ -289,26 +289,26 @@ export default function Checkout() {
             <footer className="footer">
                 <Footer />
             </footer>
-            {/* <!-- Dialog / modal --> */}
-            <div id="delete-confirm" className="dialog hide">
-                <div className="dialog__content">
-                    <div className="dialog__text">Do you agree to delete this item ?</div>
-                    <div className="dialog__bottom">
+            {/* <!-- Modal: confirm remove shopping cart item -->Add commentMore actions */}
+            <div id="delete-confirm" className="modal modal--small hide">
+                <div className="modal__content">
+                    <p className="modal__text">Do you want remove this item from shopping cart?</p>
+                    <div className="modal__bottom">
                         <button
-                            className="btn btn--small btn--text dialog__btn js-toggle"
+                            className="btn btn--small btn--outline modal__btn js-toggle"
                             toggle-target="#delete-confirm"
                         >
                             Cancel
                         </button>
                         <button
-                            className="btn btn--small btn--primary dialog__btn btn--no-margin js-toggle"
+                            className="btn btn--small btn--danger btn--primary modal__btn btn--no-margin js-toggle"
                             toggle-target="#delete-confirm"
                         >
-                            Confirm
+                            Delete
                         </button>
                     </div>
                 </div>
-                <div className="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+                <div className="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
             </div>
         </>
     );

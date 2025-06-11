@@ -1,6 +1,6 @@
 import Footer from "~/layouts/footer";
 import Header from "~/layouts/header-logined";
-export default function Shipping() {
+export default function Payment() {
     return (
         <>
             <header className="header">
@@ -8,22 +8,6 @@ export default function Shipping() {
             </header>
             <main className="checkout-page">
                 <div className="container">
-                    {/* <!-- Search bar --> */}
-                    <div className="checkout-container">
-                        <div className="search-bar d-none d-md-flex">
-                            <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="Search for item"
-                                className="search-bar__input"
-                            />
-                            <button className="search-bar__submit">
-                                <img src="/icons/search.svg" alt="" className="search-bar__icon icon" />
-                            </button>
-                        </div>
-                    </div>
-
                     {/* <!-- Breadcrumbs --> */}
                     <div className="checkout-container">
                         <ul className="breadcrumbs checkout-page__breadcrumbs">
@@ -34,14 +18,8 @@ export default function Shipping() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/checkout" className="breadcrumbs__link">
-                                    Checkout
-                                    <img src="/icons/arrow-right.svg" alt="" />
-                                </a>
-                            </li>
-                            <li>
                                 <a href="#!" className="breadcrumbs__link breadcrumbs__link--current">
-                                    Shipping
+                                    Checkout
                                 </a>
                             </li>
                         </ul>
@@ -52,115 +30,10 @@ export default function Shipping() {
                         <div className="row gy-xl-3">
                             <div className="col-8 col-xl-12">
                                 <div className="cart-info">
-                                    <h1 className="cart-info__heading">
-                                        1. Shipping, arrives between Mon, May 16—Tue, May 24
-                                    </h1>
-                                    <div className="cart-info__separate"></div>
-
-                                    {/* <!-- Checkout address --> */}
-                                    <div className="user-address">
-                                        <div className="user-address__top">
-                                            <div>
-                                                <h2 className="user-address__title">Shipping address</h2>
-                                                <p className="user-address__desc">
-                                                    Where should we deliver your order?
-                                                </p>
-                                            </div>
-                                            <button
-                                                className="user-address__btn btn btn--primary btn--rounded btn--small js-toggle"
-                                                toggle-target="#add-new-address"
-                                            >
-                                                <img src="/icons/plus.svg" alt="" />
-                                                Add a new address
-                                            </button>
-                                        </div>
-                                        <div className="user-address__list">
-                                            {/* <!-- Address card 1 --> */}
-                                            <article className="address-card">
-                                                <div className="address-card__left">
-                                                    <div className="address-card__choose">
-                                                        <label className="address-card__checkbox">
-                                                            <input
-                                                                type="checkbox"
-                                                                name=""
-                                                                className="address-card__checkbox-input"
-                                                                title="Select this address"
-                                                            />
-                                                        </label>
-                                                    </div>
-                                                    <div className="address-card__info">
-                                                        <h3 className="address-card__title">Imran Khan</h3>
-                                                        <p className="address-card__desc">
-                                                            Museum of Rajas, Sylhet Sadar, Sylhet 3100.
-                                                        </p>
-                                                        <ul className="address-card__list">
-                                                            <li className="address-card__list-item">Shipping</li>
-                                                            <li className="address-card__list-item">
-                                                                Delivery from store
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className="address-card__right">
-                                                    <div className="address-card__ctrl">
-                                                        <button
-                                                            className="address-card__ctrl-btn js-toggle"
-                                                            toggle-target="#add-new-address"
-                                                        >
-                                                            <img className="icon" src="/icons/edit.svg" alt="" />
-                                                            Edit
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            {/* <!-- Address card 2 --> */}
-                                            <article className="address-card">
-                                                <div className="address-card__left">
-                                                    <div className="address-card__choose">
-                                                        <label className="address-card__checkbox">
-                                                            <input
-                                                                type="checkbox"
-                                                                name=""
-                                                                className="address-card__checkbox-input"
-                                                                title="Select this address"
-                                                            />
-                                                        </label>
-                                                    </div>
-                                                    <div className="address-card__info">
-                                                        <h3 className="address-card__title">Imran Khan</h3>
-                                                        <p className="address-card__desc">
-                                                            Al Hamra City (10th Floor), Hazrat Shahjalal Road, Sylhet,
-                                                            Sylhet, Bangladesh
-                                                        </p>
-                                                        <ul className="address-card__list">
-                                                            <li className="address-card__list-item">Shipping</li>
-                                                            <li className="address-card__list-item">
-                                                                Delivery from store
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className="address-card__right">
-                                                    <div className="address-card__ctrl">
-                                                        <button
-                                                            className="address-card__ctrl-btn js-toggle"
-                                                            toggle-target="#add-new-address"
-                                                        >
-                                                            <img className="icon" src="/icons/edit.svg" alt="" />
-                                                            Edit
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div className="cart-info__separate"></div>
-                                    <h2 className="cart-info__sub-heading">Items details</h2>
                                     <div className="cart-info__list">
                                         {/* <!-- Cart item 1 --> */}
                                         <article className="cart-item">
-                                            <a href="/product-detail">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-1.png"
                                                     alt=""
@@ -170,7 +43,7 @@ export default function Shipping() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="/product-detail">
+                                                        <a href="./product-detail">
                                                             Coffee Beans - Espresso Arabica and Robusta Beans
                                                         </a>
                                                     </h3>
@@ -218,7 +91,7 @@ export default function Shipping() {
 
                                         {/* <!-- Cart item 2 --> */}
                                         <article className="cart-item">
-                                            <a href="/product-detail">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-2.png"
                                                     alt=""
@@ -228,7 +101,7 @@ export default function Shipping() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="/product-detail">
+                                                        <a href="./product-detail">
                                                             Lavazza Coffee Blends - Try the Italian Espresso
                                                         </a>
                                                     </h3>
@@ -276,7 +149,7 @@ export default function Shipping() {
 
                                         {/* <!-- Cart item 3 --> */}
                                         <article className="cart-item">
-                                            <a href="/product-detail">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-3.png"
                                                     alt=""
@@ -286,7 +159,7 @@ export default function Shipping() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="/product-detail">
+                                                        <a href="./product-detail">
                                                             Qualità Oro Mountain Grown - Espresso Coffee Beans
                                                         </a>
                                                     </h3>
@@ -388,7 +261,7 @@ export default function Shipping() {
                                         <span>Estimated Total</span>
                                         <span>$201.65</span>
                                     </div>
-                                    <a href="/payment" className="cart-info__next-btn btn btn--primary btn--rounded">
+                                    <a href="/shipping" className="cart-info__next-btn btn btn--primary btn--rounded">
                                         Continue to checkout
                                     </a>
                                 </div>
@@ -408,6 +281,7 @@ export default function Shipping() {
                                     </a>
                                 </div>
                             </div>
+                            <div className="col-4"></div>
                         </div>
                     </div>
                 </div>
@@ -418,19 +292,19 @@ export default function Shipping() {
             {/* <!-- Modal: confirm remove shopping cart item --> */}
             <div id="delete-confirm" className="modal modal--small hide">
                 <div className="modal__content">
-                    <p className="modal__text">Do you want remove this item from shopping cart?</p>
+                    <div className="modal__text">Lorem ipsum dolor sit amet consectetur?</div>
                     <div className="modal__bottom">
                         <button
-                            className="btn btn--small btn--outline modal__btn js-toggle"
+                            className="btn btn--small btn--text modal__btn js-toggle"
                             toggle-target="#delete-confirm"
                         >
                             Cancel
                         </button>
                         <button
-                            className="btn btn--small btn--danger btn--primary modal__btn btn--no-margin js-toggle"
+                            className="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
                             toggle-target="#delete-confirm"
                         >
-                            Delete
+                            Confirm
                         </button>
                     </div>
                 </div>
@@ -439,7 +313,7 @@ export default function Shipping() {
             {/* <!-- Modal: address new shipping address --> */}
             <div
                 id="add-new-address"
-                className="modal hide"
+                className="modal show"
                 style={{ "--content-width": "650px" } as React.CSSProperties}
             >
                 <div className="modal__content">
@@ -514,17 +388,16 @@ export default function Shipping() {
                                         toggle-target="#city-dialog"
                                     />
                                     <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
-
-                                    {/* <!-- Select dialog --> */}
                                     <div id="city-dialog" className="form__select-dialog hide">
-                                        <h2 className="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
                                         <button
                                             className="form__close-dialog d-none d-sm-block js-toggle"
                                             toggle-target="#city-dialog"
-                                        ></button>
+                                        >
+                                            &times
+                                        </button>
                                         <div className="form__search">
                                             <input type="text" placeholder="Search" className="form__search-input" />
-                                            <img src="/icons/search.svg" alt="" className="form__search-icon " />
+                                            <img src="/icons/search.svg" alt="" className="form__search-icon icon" />
                                         </div>
                                         <ul className="form__options-list">
                                             <li className="form__option">Toronto</li>
