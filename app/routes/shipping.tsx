@@ -522,7 +522,9 @@ export default function Shipping() {
                                         <button
                                             className="form__close-dialog d-none d-sm-block js-toggle"
                                             toggle-target="#city-dialog"
-                                        ></button>
+                                        >
+                                            &times;
+                                        </button>
                                         <div className="form__search">
                                             <input type="text" placeholder="Search" className="form__search-input" />
                                             <img src="/icons/search.svg" alt="" className="form__search-icon " />

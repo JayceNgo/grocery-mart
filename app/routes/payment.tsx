@@ -393,7 +393,7 @@ export default function Payment() {
                                             className="form__close-dialog d-none d-sm-block js-toggle"
                                             toggle-target="#city-dialog"
                                         >
-                                            &times
+                                            &times;
                                         </button>
                                         <div className="form__search">
                                             <input type="text" placeholder="Search" className="form__search-input" />
