@@ -184,6 +184,80 @@ export default function Checkout() {
                                             </div>
                                         </article>
                                     </div>
+                                    <div className="cart-info__bottom">
+                                        <div className="row">
+                                            <div className="col-8">
+                                                <div className="cart-info__continue">
+                                                    <a href="./" className="cart-info__continue-link">
+                                                        <img
+                                                            className="cart-info__continue-icon"
+                                                            src="/icons/arrow-down-2.svg"
+                                                            alt=""
+                                                        />
+                                                        Continue Shopping
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="col-4">
+                                                <div className="cart-info__row">
+                                                    <span>Subtotal:</span>
+                                                    <span>$191.65</span>
+                                                </div>
+                                                <div className="cart-info__row">
+                                                    <span>Shipping:</span>
+                                                    <span>$10.00</span>
+                                                </div>
+                                                <div className="cart-info__separate"></div>
+                                                <div className="cart-info__row cart-info__row--bold">
+                                                    <span>Total:</span>
+                                                    <span>$201.65</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-4">
+                                <div className="cart-info">
+                                    <div className="cart-info__row">
+                                        <span>
+                                            Subtotal <span className="cart-info__sub-label">(items)</span>
+                                        </span>
+                                        <span>3</span>
+                                    </div>
+                                    <div className="cart-info__row">
+                                        <span>
+                                            Price <span className="cart-info__sub-label">(Total)</span>
+                                        </span>
+                                        <span>$191.65</span>
+                                    </div>
+                                    <div className="cart-info__row">
+                                        <span>Shipping</span>
+                                        <span>$10.00</span>
+                                    </div>
+                                    <div className="cart-info__separate"></div>
+                                    <div className="cart-info__row">
+                                        <span>Estimated Total</span>
+                                        <span>$201.65</span>
+                                    </div>
+                                    <a href="#!" className="cart-info__next-btn btn btn--primary btn--rounded">
+                                        Continue to checkout
+                                    </a>
+                                </div>
+                                <div className="cart-info">
+                                    <a href="#!">
+                                        <article className="gift-item">
+                                            <div className="gift-item__icon-wrap">
+                                                <img src="/icons/gift.svg" alt="" className="gift-item__icon" />
+                                            </div>
+                                            <div className="gift-item__content">
+                                                <h3 className="gift-item__title">Send this order as a gift.</h3>
+                                                <p className="gift-item__desc">
+                                                    Available items will be shipped to your gift recipient.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                             </div>
                             <div className="col-4"></div>
