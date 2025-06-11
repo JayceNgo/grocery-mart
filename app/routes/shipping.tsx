@@ -34,7 +34,7 @@ export default function Shipping() {
                                 </a>
                             </li>
                             <li>
-                                <a href="./" className="breadcrumbs__link">
+                                <a href="/checkout" className="breadcrumbs__link">
                                     Checkout
                                     <img src="/icons/arrow-right.svg" alt="" />
                                 </a>
@@ -66,7 +66,7 @@ export default function Shipping() {
                                                     Where should we deliver your order?
                                                 </p>
                                             </div>
-                                            <button className="user-address__btn btn btn--primary btn--rounded">
+                                            <button className="user-address__btn btn btn--primary btn--rounded btn--small">
                                                 <img src="/icons/plus.svg" alt="" />
                                                 Add a new address
                                             </button>
@@ -76,7 +76,14 @@ export default function Shipping() {
                                             <article className="address-card">
                                                 <div className="address-card__left">
                                                     <div className="address-card__choose">
-                                                        {/* <!-- Custom checkbox --> */}
+                                                        <label className="address-card__checkbox">
+                                                            <input
+                                                                type="checkbox"
+                                                                name=""
+                                                                className="address-card__checkbox-input"
+                                                                title="Select this address"
+                                                            />
+                                                        </label>
                                                     </div>
                                                     <div className="address-card__info">
                                                         <h3 className="address-card__title">Imran Khan</h3>
@@ -94,7 +101,7 @@ export default function Shipping() {
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
                                                         <button className="address-card__ctrl-btn">
-                                                            <img src="/icons/edit.svg" alt="" />
+                                                            <img className="icon" src="/icons/edit.svg" alt="" />
                                                             Edit
                                                         </button>
                                                     </div>
@@ -105,7 +112,14 @@ export default function Shipping() {
                                             <article className="address-card">
                                                 <div className="address-card__left">
                                                     <div className="address-card__choose">
-                                                        {/* <!-- Custom checkbox --> */}
+                                                        <label className="address-card__checkbox">
+                                                            <input
+                                                                type="checkbox"
+                                                                name=""
+                                                                className="address-card__checkbox-input"
+                                                                title="Select this address"
+                                                            />
+                                                        </label>
                                                     </div>
                                                     <div className="address-card__info">
                                                         <h3 className="address-card__title">Imran Khan</h3>
@@ -124,7 +138,7 @@ export default function Shipping() {
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
                                                         <button className="address-card__ctrl-btn">
-                                                            <img src="/icons/edit.svg" alt="" />
+                                                            <img className="icon" src="/icons/edit.svg" alt="" />
                                                             Edit
                                                         </button>
                                                     </div>
@@ -132,7 +146,7 @@ export default function Shipping() {
                                             </article>
                                         </div>
                                     </div>
-
+                                    <div className="cart-info__separate"></div>
                                     <h2 className="cart-info__sub-heading">Items details</h2>
                                     <div className="cart-info__list">
                                         {/* <!-- Cart item 1 --> */}
