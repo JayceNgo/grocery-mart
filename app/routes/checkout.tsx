@@ -53,15 +53,19 @@ export default function Checkout() {
                                                     <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
-                                                            <img src="/icons/arrow-down-2.svg" alt="" />
+                                                            <img
+                                                                className="icon"
+                                                                src="/icons/arrow-down-2.svg"
+                                                                alt=""
+                                                            />
                                                         </div>
                                                         <div className="cart-item__input">
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/minus.svg" alt="" />
+                                                                <img className="icon" src="/icons/minus.svg" alt="" />
                                                             </button>
                                                             <span>1</span>
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/plus.svg" alt="" />
+                                                                <img className="icon" src="/icons/plus.svg" alt="" />
                                                             </button>
                                                         </div>
                                                     </div>
@@ -104,15 +108,19 @@ export default function Checkout() {
                                                     <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
-                                                            <img src="/icons/arrow-down-2.svg" alt="" />
+                                                            <img
+                                                                className="icon"
+                                                                src="/icons/arrow-down-2.svg"
+                                                                alt=""
+                                                            />
                                                         </div>
                                                         <div className="cart-item__input">
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/minus.svg" alt="" />
+                                                                <img className="icon" src="/icons/minus.svg" alt="" />
                                                             </button>
                                                             <span>1</span>
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/plus.svg" alt="" />
+                                                                <img className="icon" src="/icons/plus.svg" alt="" />
                                                             </button>
                                                         </div>
                                                     </div>
@@ -155,15 +163,19 @@ export default function Checkout() {
                                                     <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
-                                                            <img src="/icons/arrow-down-2.svg" alt="" />
+                                                            <img
+                                                                className="icon"
+                                                                src="/icons/arrow-down-2.svg"
+                                                                alt=""
+                                                            />
                                                         </div>
                                                         <div className="cart-item__input">
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/minus.svg" alt="" />
+                                                                <img className="icon" src="/icons/minus.svg" alt="" />
                                                             </button>
                                                             <span>1</span>
                                                             <button className="cart-item__input-btn">
-                                                                <img src="/icons/plus.svg" alt="" />
+                                                                <img className="icon" src="/icons/plus.svg" alt="" />
                                                             </button>
                                                         </div>
                                                     </div>
@@ -190,7 +202,7 @@ export default function Checkout() {
                                                 <div className="cart-info__continue">
                                                     <a href="./" className="cart-info__continue-link">
                                                         <img
-                                                            className="cart-info__continue-icon"
+                                                            className="cart-info__continue-icon icon"
                                                             src="/icons/arrow-down-2.svg"
                                                             alt=""
                                                         />
