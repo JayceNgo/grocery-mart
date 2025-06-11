@@ -10,4 +10,5 @@ export default [
     route("new-password", "routes/new-password.tsx"),
     route("product-detail", "routes/product-detail.tsx"),
     route("checkout", "routes/checkout.tsx"),
+    route("shipping", "routes/shipping.tsx"),
 ] satisfies RouteConfig;

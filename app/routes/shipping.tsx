@@ -1,6 +1,6 @@
 import Footer from "~/layouts/footer";
 import Header from "~/layouts/header-logined";
-export default function Checkout() {
+export default function Shipping() {
     return (
         <>
             <header className="header">
@@ -8,6 +8,22 @@ export default function Checkout() {
             </header>
             <main className="checkout-page">
                 <div className="container">
+                    {/* <!-- Search bar --> */}
+                    <div className="checkout-container">
+                        <div className="search-bar d-none d-md-flex">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Search for item"
+                                className="search-bar__input"
+                            />
+                            <button className="search-bar__submit">
+                                <img src="/icons/search.svg" alt="" className="search-bar__icon icon" />
+                            </button>
+                        </div>
+                    </div>
+
                     {/* <!-- Breadcrumbs --> */}
                     <div className="checkout-container">
                         <ul className="breadcrumbs checkout-page__breadcrumbs">
@@ -18,8 +34,14 @@ export default function Checkout() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" className="breadcrumbs__link breadcrumbs__link--current">
+                                <a href="./" className="breadcrumbs__link">
                                     Checkout
+                                    <img src="/icons/arrow-right.svg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" className="breadcrumbs__link breadcrumbs__link--current">
+                                    Shipping
                                 </a>
                             </li>
                         </ul>
@@ -30,10 +52,92 @@ export default function Checkout() {
                         <div className="row gy-xl-3">
                             <div className="col-8 col-xl-12">
                                 <div className="cart-info">
+                                    <h1 className="cart-info__heading">
+                                        1. Shipping, arrives between Mon, May 16—Tue, May 24
+                                    </h1>
+                                    <div className="cart-info__separate"></div>
+
+                                    {/* <!-- Checkout address --> */}
+                                    <div className="user-address">
+                                        <div className="user-address__top">
+                                            <div>
+                                                <h2 className="user-address__title">Shipping address</h2>
+                                                <p className="user-address__desc">
+                                                    Where should we deliver your order?
+                                                </p>
+                                            </div>
+                                            <button className="user-address__btn btn btn--primary btn--rounded">
+                                                <img src="/icons/plus.svg" alt="" />
+                                                Add a new address
+                                            </button>
+                                        </div>
+                                        <div className="user-address__list">
+                                            {/* <!-- Address card 1 --> */}
+                                            <article className="address-card">
+                                                <div className="address-card__left">
+                                                    <div className="address-card__choose">
+                                                        {/* <!-- Custom checkbox --> */}
+                                                    </div>
+                                                    <div className="address-card__info">
+                                                        <h3 className="address-card__title">Imran Khan</h3>
+                                                        <p className="address-card__desc">
+                                                            Museum of Rajas, Sylhet Sadar, Sylhet 3100.
+                                                        </p>
+                                                        <ul className="address-card__list">
+                                                            <li className="address-card__list-item">Shipping</li>
+                                                            <li className="address-card__list-item">
+                                                                Delivery from store
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div className="address-card__right">
+                                                    <div className="address-card__ctrl">
+                                                        <button className="address-card__ctrl-btn">
+                                                            <img src="/icons/edit.svg" alt="" />
+                                                            Edit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            {/* <!-- Address card 2 --> */}
+                                            <article className="address-card">
+                                                <div className="address-card__left">
+                                                    <div className="address-card__choose">
+                                                        {/* <!-- Custom checkbox --> */}
+                                                    </div>
+                                                    <div className="address-card__info">
+                                                        <h3 className="address-card__title">Imran Khan</h3>
+                                                        <p className="address-card__desc">
+                                                            Al Hamra City (10th Floor), Hazrat Shahjalal Road, Sylhet,
+                                                            Sylhet, Bangladesh
+                                                        </p>
+                                                        <ul className="address-card__list">
+                                                            <li className="address-card__list-item">Shipping</li>
+                                                            <li className="address-card__list-item">
+                                                                Delivery from store
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div className="address-card__right">
+                                                    <div className="address-card__ctrl">
+                                                        <button className="address-card__ctrl-btn">
+                                                            <img src="/icons/edit.svg" alt="" />
+                                                            Edit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <h2 className="cart-info__sub-heading">Items details</h2>
                                     <div className="cart-info__list">
                                         {/* <!-- Cart item 1 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail">
+                                            <a href="/product-detail">
                                                 <img
                                                     src="/img/product/item-1.png"
                                                     alt=""
@@ -43,7 +147,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail">
+                                                        <a href="/product-detail">
                                                             Coffee Beans - Espresso Arabica and Robusta Beans
                                                         </a>
                                                     </h3>
@@ -91,7 +195,7 @@ export default function Checkout() {
 
                                         {/* <!-- Cart item 2 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail">
+                                            <a href="/product-detail">
                                                 <img
                                                     src="/img/product/item-2.png"
                                                     alt=""
@@ -101,7 +205,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail">
+                                                        <a href="/product-detail">
                                                             Lavazza Coffee Blends - Try the Italian Espresso
                                                         </a>
                                                     </h3>
@@ -149,7 +253,7 @@ export default function Checkout() {
 
                                         {/* <!-- Cart item 3 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail">
+                                            <a href="/product-detail">
                                                 <img
                                                     src="/img/product/item-3.png"
                                                     alt=""
@@ -159,7 +263,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail">
+                                                        <a href="/product-detail">
                                                             Qualità Oro Mountain Grown - Espresso Coffee Beans
                                                         </a>
                                                     </h3>
@@ -261,7 +365,7 @@ export default function Checkout() {
                                         <span>Estimated Total</span>
                                         <span>$201.65</span>
                                     </div>
-                                    <a href="/shipping" className="cart-info__next-btn btn btn--primary btn--rounded">
+                                    <a href="#!" className="cart-info__next-btn btn btn--primary btn--rounded">
                                         Continue to checkout
                                     </a>
                                 </div>
@@ -281,7 +385,6 @@ export default function Checkout() {
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-4"></div>
                         </div>
                     </div>
                 </div>
@@ -292,7 +395,7 @@ export default function Checkout() {
             {/* <!-- Dialog / modal --> */}
             <div id="delete-confirm" className="dialog hide">
                 <div className="dialog__content">
-                    <div className="dialog__text">Do you agree to delete this item ?</div>
+                    <div className="dialog__text">Lorem ipsum dolor sit amet consectetur?</div>
                     <div className="dialog__bottom">
                         <button
                             className="btn btn--small btn--text dialog__btn js-toggle"
