@@ -418,7 +418,7 @@ export default function Shipping() {
             {/* <!-- Modal: confirm remove shopping cart item --> */}
             <div id="delete-confirm" className="modal modal--small hide">
                 <div className="modal__content">
-                    <p className="modal__text">Do you want remove this item from shopping cart?</p>
+                    <p className="modal__text">Do you want to remove this item from shopping cart?</p>
                     <div className="modal__bottom">
                         <button
                             className="btn btn--small btn--outline modal__btn js-toggle"
@@ -510,6 +510,7 @@ export default function Shipping() {
                                         name=""
                                         placeholder="City/District/Town"
                                         id="city"
+                                        readOnly
                                         className="form__input js-toggle"
                                         toggle-target="#city-dialog"
                                     />
@@ -572,7 +573,12 @@ export default function Shipping() {
                             >
                                 Cancel
                             </button>
-                            <button className="btn btn--small btn--primary modal__btn btn--no-margin">Create</button>
+                            <button
+                                className="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
+                                toggle-target="#add-new-address"
+                            >
+                                Create
+                            </button>
                         </div>
                     </form>
                 </div>

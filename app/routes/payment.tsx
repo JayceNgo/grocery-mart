@@ -292,7 +292,7 @@ export default function Payment() {
             {/* <!-- Modal: confirm remove shopping cart item --> */}
             <div id="delete-confirm" className="modal modal--small hide">
                 <div className="modal__content">
-                    <div className="modal__text">Lorem ipsum dolor sit amet consectetur?</div>
+                    <div className="modal__text">Do you want to remove this item from shopping cart?</div>
                     <div className="modal__bottom">
                         <button
                             className="btn btn--small btn--text modal__btn js-toggle"

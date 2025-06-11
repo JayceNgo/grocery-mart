@@ -289,10 +289,10 @@ export default function Checkout() {
             <footer className="footer">
                 <Footer />
             </footer>
-            {/* <!-- Modal: confirm remove shopping cart item -->Add commentMore actions */}
+            {/* <!-- Modal: confirm remove shopping cart item -->*/}
             <div id="delete-confirm" className="modal modal--small hide">
                 <div className="modal__content">
-                    <p className="modal__text">Do you want remove this item from shopping cart?</p>
+                    <p className="modal__text">Do you want to remove this item from shopping cart?</p>
                     <div className="modal__bottom">
                         <button
                             className="btn btn--small btn--outline modal__btn js-toggle"
