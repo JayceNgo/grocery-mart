@@ -66,7 +66,10 @@ export default function Shipping() {
                                                     Where should we deliver your order?
                                                 </p>
                                             </div>
-                                            <button className="user-address__btn btn btn--primary btn--rounded btn--small">
+                                            <button
+                                                className="user-address__btn btn btn--primary btn--rounded btn--small js-toggle"
+                                                toggle-target="#add-new-address"
+                                            >
                                                 <img src="/icons/plus.svg" alt="" />
                                                 Add a new address
                                             </button>
@@ -100,7 +103,10 @@ export default function Shipping() {
                                                 </div>
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
-                                                        <button className="address-card__ctrl-btn">
+                                                        <button
+                                                            className="address-card__ctrl-btn js-toggle"
+                                                            toggle-target="#add-new-address"
+                                                        >
                                                             <img className="icon" src="/icons/edit.svg" alt="" />
                                                             Edit
                                                         </button>
@@ -137,7 +143,10 @@ export default function Shipping() {
                                                 </div>
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
-                                                        <button className="address-card__ctrl-btn">
+                                                        <button
+                                                            className="address-card__ctrl-btn js-toggle"
+                                                            toggle-target="#add-new-address"
+                                                        >
                                                             <img className="icon" src="/icons/edit.svg" alt="" />
                                                             Edit
                                                         </button>
@@ -406,26 +415,143 @@ export default function Shipping() {
             <footer className="footer">
                 <Footer />
             </footer>
-            {/* <!-- Dialog / modal --> */}
-            <div id="delete-confirm" className="dialog hide">
-                <div className="dialog__content">
-                    <div className="dialog__text">Lorem ipsum dolor sit amet consectetur?</div>
-                    <div className="dialog__bottom">
+            {/* <!-- Modal: confirm remove shopping cart item --> */}
+            <div id="delete-confirm" className="modal modal--small hide">
+                <div className="modal__content">
+                    <div className="modal__text">Lorem ipsum dolor sit amet consectetur?</div>
+                    <div className="modal__bottom">
                         <button
-                            className="btn btn--small btn--text dialog__btn js-toggle"
+                            className="btn btn--small btn--text modal__btn js-toggle"
                             toggle-target="#delete-confirm"
                         >
                             Cancel
                         </button>
                         <button
-                            className="btn btn--small btn--primary dialog__btn btn--no-margin js-toggle"
+                            className="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
                             toggle-target="#delete-confirm"
                         >
                             Confirm
                         </button>
                     </div>
                 </div>
-                <div className="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+                <div className="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+            </div>
+            {/* <!-- Modal: address new shipping address --> */}
+            <div
+                id="add-new-address"
+                className="modal show"
+                style={{ "--content-width": "650px" } as React.CSSProperties}
+            >
+                <div className="modal__content">
+                    <form action="" className="form">
+                        <h2 className="modal__heading">Add new shopping address</h2>
+                        <div className="modal__body">
+                            <div className="form__row">
+                                <div className="form__group">
+                                    <label htmlFor="name" className="form__label form__label--small">
+                                        Name
+                                    </label>
+                                    <div className="form__text-input form__text-input--small">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Name"
+                                            className="form__input"
+                                            required
+                                            minLength={2}
+                                        />
+                                        <img
+                                            src="./assets/icons/form-error.svg"
+                                            alt=""
+                                            className="form__input-icon-error"
+                                        />
+                                    </div>
+                                    <p className="form__error">Name must be at least 2 characters</p>
+                                </div>
+                                <div className="form__group">
+                                    <label htmlFor="phone" className="form__label form__label--small">
+                                        Phone
+                                    </label>
+                                    <div className="form__text-input form__text-input--small">
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            id="phone"
+                                            placeholder="Phone"
+                                            className="form__input"
+                                            required
+                                            minLength={10}
+                                        />
+                                        <img
+                                            src="./assets/icons/form-error.svg"
+                                            alt=""
+                                            className="form__input-icon-error"
+                                        />
+                                    </div>
+                                    <p className="form__error">Phone must be at least 10 characters</p>
+                                </div>
+                            </div>
+                            <div className="form__group">
+                                <label htmlFor="address" className="form__label form__label--small">
+                                    Address
+                                </label>
+                                <div className="form__text-area">
+                                    <textarea
+                                        name="address"
+                                        id="address"
+                                        placeholder="Address (Area and street)"
+                                        className="form__text-area-input"
+                                        required
+                                    ></textarea>
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        className="form__input-icon-error"
+                                    />
+                                </div>
+                                <p className="form__error">Address not empty</p>
+                            </div>
+                            <div className="form__group">
+                                <label htmlFor="city" className="form__label form__label--small">
+                                    City/District/Town
+                                </label>
+                                <div className="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        name=""
+                                        placeholder="City/District/Town"
+                                        id="city"
+                                        className="form__input"
+                                    />
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        className="form__input-icon-error"
+                                    />
+                                </div>
+                                <p className="form__error">Phone must be at least 11 characters</p>
+                            </div>
+                            <div className="form__group form__group--inline">
+                                <label className="form__checkbox">
+                                    <input type="checkbox" name="" id="" className="form__checkbox-input d-none" />
+                                    <span className="form__checkbox-label">Set as default address</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="modal__bottom">
+                            <button
+                                className="btn btn--small btn--text modal__btn js-toggle"
+                                toggle-target="#add-new-address"
+                            >
+                                Cancel
+                            </button>
+                            <button className="btn btn--small btn--primary modal__btn btn--no-margin">Create</button>
+                        </div>
+                    </form>
+                </div>
+                <div className="modal__overlay"></div>
             </div>
         </>
     );
