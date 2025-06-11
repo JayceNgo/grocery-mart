@@ -27,8 +27,8 @@ export default function Checkout() {
 
                     {/* <!-- Checkout content --> */}
                     <div className="checkout-container">
-                        <div className="row">
-                            <div className="col-8">
+                        <div className="row gy-xl-3">
+                            <div className="col-8 col-xl-12">
                                 <div className="cart-info">
                                     <div className="cart-info__list">
                                         {/* <!-- Cart item 1 --> */}
@@ -50,7 +50,7 @@ export default function Checkout() {
                                                     <p className="cart-item__price-wrap">
                                                         $47.00 | <span className="cart-item__status">In Stock</span>
                                                     </p>
-                                                    <div className="cart-item__ctrl">
+                                                    <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
                                                             <img src="/icons/arrow-down-2.svg" alt="" />
@@ -101,7 +101,7 @@ export default function Checkout() {
                                                     <p className="cart-item__price-wrap">
                                                         $53.00 | <span className="cart-item__status">In Stock</span>
                                                     </p>
-                                                    <div className="cart-item__ctrl">
+                                                    <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
                                                             <img src="/icons/arrow-down-2.svg" alt="" />
@@ -152,7 +152,7 @@ export default function Checkout() {
                                                     <p className="cart-item__price-wrap">
                                                         $38.65 | <span className="cart-item__status">In Stock</span>
                                                     </p>
-                                                    <div className="cart-item__ctrl">
+                                                    <div className="cart-item__ctrl cart-item__ctrl--md-block">
                                                         <div className="cart-item__input">
                                                             LavAzza
                                                             <img src="/icons/arrow-down-2.svg" alt="" />
@@ -184,9 +184,9 @@ export default function Checkout() {
                                             </div>
                                         </article>
                                     </div>
-                                    <div className="cart-info__bottom">
+                                    <div className="cart-info__bottom d-md-none">
                                         <div className="row">
-                                            <div className="col-8">
+                                            <div className="col-8 col-xxl-7">
                                                 <div className="cart-info__continue">
                                                     <a href="./" className="cart-info__continue-link">
                                                         <img
@@ -198,7 +198,7 @@ export default function Checkout() {
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div className="col-4">
+                                            <div className="col-4 col-xxl-5">
                                                 <div className="cart-info__row">
                                                     <span>Subtotal:</span>
                                                     <span>$191.65</span>
@@ -217,7 +217,7 @@ export default function Checkout() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 col-xl-12">
                                 <div className="cart-info">
                                     <div className="cart-info__row">
                                         <span>
