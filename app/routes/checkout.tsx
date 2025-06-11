@@ -33,7 +33,7 @@ export default function Checkout() {
                                     <div className="cart-info__list">
                                         {/* <!-- Cart item 1 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail.html">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-1.png"
                                                     alt=""
@@ -43,7 +43,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail.html">
+                                                        <a href="./product-detail">
                                                             Coffee Beans - Espresso Arabica and Robusta Beans
                                                         </a>
                                                     </h3>
@@ -77,7 +77,10 @@ export default function Checkout() {
                                                             <img src="/icons/heart-2.svg" alt="" />
                                                             Save
                                                         </button>
-                                                        <button className="cart-item__ctrl-btn">
+                                                        <button
+                                                            className="cart-item__ctrl-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
                                                             <img src="/icons/trash.svg" alt="" />
                                                             Delete
                                                         </button>
@@ -88,7 +91,7 @@ export default function Checkout() {
 
                                         {/* <!-- Cart item 2 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail.html">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-2.png"
                                                     alt=""
@@ -98,7 +101,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail.html">
+                                                        <a href="./product-detail">
                                                             Lavazza Coffee Blends - Try the Italian Espresso
                                                         </a>
                                                     </h3>
@@ -132,7 +135,10 @@ export default function Checkout() {
                                                             <img src="/icons/heart-2.svg" alt="" />
                                                             Save
                                                         </button>
-                                                        <button className="cart-item__ctrl-btn">
+                                                        <button
+                                                            className="cart-item__ctrl-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
                                                             <img src="/icons/trash.svg" alt="" />
                                                             Delete
                                                         </button>
@@ -143,7 +149,7 @@ export default function Checkout() {
 
                                         {/* <!-- Cart item 3 --> */}
                                         <article className="cart-item">
-                                            <a href="./product-detail.html">
+                                            <a href="./product-detail">
                                                 <img
                                                     src="/img/product/item-3.png"
                                                     alt=""
@@ -153,7 +159,7 @@ export default function Checkout() {
                                             <div className="cart-item__content">
                                                 <div className="cart-item__content-left">
                                                     <h3 className="cart-item__title">
-                                                        <a href="./product-detail.html">
+                                                        <a href="./product-detail">
                                                             Qualità Oro Mountain Grown - Espresso Coffee Beans
                                                         </a>
                                                     </h3>
@@ -187,7 +193,10 @@ export default function Checkout() {
                                                             <img src="/icons/heart-2.svg" alt="" />
                                                             Save
                                                         </button>
-                                                        <button className="cart-item__ctrl-btn">
+                                                        <button
+                                                            className="cart-item__ctrl-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
                                                             <img src="/icons/trash.svg" alt="" />
                                                             Delete
                                                         </button>
@@ -280,6 +289,27 @@ export default function Checkout() {
             <footer className="footer">
                 <Footer />
             </footer>
+            {/* <!-- Dialog / modal --> */}
+            <div id="delete-confirm" className="dialog hide">
+                <div className="dialog__content">
+                    <div className="dialog__text">Do you agree to delete this item ?</div>
+                    <div className="dialog__bottom">
+                        <button
+                            className="btn btn--small btn--text dialog__btn js-toggle"
+                            toggle-target="#delete-confirm"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            className="btn btn--small btn--primary dialog__btn btn--no-margin js-toggle"
+                            toggle-target="#delete-confirm"
+                        >
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+                <div className="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+            </div>
         </>
     );
 }

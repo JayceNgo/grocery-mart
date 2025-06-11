@@ -6127,7 +6127,7 @@ export default function Header() {
                                     </div>
                                     <div className="act-dropdown__checkout">
                                         <a
-                                            href=""
+                                            href="/checkout"
                                             className="btn btn--primary btn--rounded act-dropdown__checkout-btn"
                                         >
                                             Check Out All
