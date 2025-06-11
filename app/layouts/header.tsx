@@ -20,13 +20,13 @@ export default function Header() {
                         <img className="icon" src="/icons/arrow-left.svg" alt="" />
                     </button>
 
-                    <a href="" className="nav-btn d-none d-md-flex">
+                    <a href="/checkout" className="nav-btn d-none d-md-flex">
                         <img src="/icons/buy.svg" alt="" className="nav-btn__icon icon" />
                         <span className="nav-btn__title">Card</span>
                         <span className="nav-btn__qnt">3</span>
                     </a>
 
-                    <a href="" className="nav-btn d-none d-md-flex">
+                    <a href="#!" className="nav-btn d-none d-md-flex">
                         <img src="/icons/heart.svg" alt="" className="nav-btn__icon icon" />
                         <span className="nav-btn__title">Favourite</span>
                         <span className="nav-btn__qnt">3</span>

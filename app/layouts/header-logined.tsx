@@ -20,7 +20,7 @@ export default function Header() {
                         <img className="icon" src="/icons/arrow-left.svg" alt="" />
                     </button>
 
-                    <a href="" className="nav-btn d-none d-md-flex">
+                    <a href="/checkout" className="nav-btn d-none d-md-flex">
                         <img src="/icons/buy.svg" alt="" className="nav-btn__icon icon" />
                         <span className="nav-btn__title">Card</span>
                         <span className="nav-btn__qnt">3</span>
@@ -6033,7 +6033,7 @@ export default function Header() {
                                     <div className="act-dropdown__separate"></div>
                                     <div className="act-dropdown__checkout">
                                         <a
-                                            href="#!"
+                                            href="/checkout"
                                             className="btn btn--primary btn--rounded act-dropdown__checkout-btn"
                                         >
                                             Check Out All
@@ -6127,7 +6127,7 @@ export default function Header() {
                                     </div>
                                     <div className="act-dropdown__checkout">
                                         <a
-                                            href="#!"
+                                            href=""
                                             className="btn btn--primary btn--rounded act-dropdown__checkout-btn"
                                         >
                                             Check Out All
