@@ -27,19 +27,19 @@ export default function Shipping() {
                     {/* <!-- Breadcrumbs --> */}
                     <div className="checkout-container">
                         <ul className="breadcrumbs checkout-page__breadcrumbs">
-                            <li>
+                            <li className="form__option">
                                 <a href="./" className="breadcrumbs__link">
                                     Home
                                     <img src="/icons/arrow-right.svg" alt="" />
                                 </a>
                             </li>
-                            <li>
+                            <li className="form__option">
                                 <a href="/checkout" className="breadcrumbs__link">
                                     Checkout
                                     <img src="/icons/arrow-right.svg" alt="" />
                                 </a>
                             </li>
-                            <li>
+                            <li className="form__option">
                                 <a href="#!" className="breadcrumbs__link breadcrumbs__link--current">
                                     Shipping
                                 </a>
@@ -461,11 +461,7 @@ export default function Shipping() {
                                             required
                                             minLength={2}
                                         />
-                                        <img
-                                            src="./assets/icons/form-error.svg"
-                                            alt=""
-                                            className="form__input-icon-error"
-                                        />
+                                        <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                                     </div>
                                     <p className="form__error">Name must be at least 2 characters</p>
                                 </div>
@@ -483,11 +479,7 @@ export default function Shipping() {
                                             required
                                             minLength={10}
                                         />
-                                        <img
-                                            src="./assets/icons/form-error.svg"
-                                            alt=""
-                                            className="form__input-icon-error"
-                                        />
+                                        <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                                     </div>
                                     <p className="form__error">Phone must be at least 10 characters</p>
                                 </div>
@@ -504,11 +496,7 @@ export default function Shipping() {
                                         className="form__text-area-input"
                                         required
                                     ></textarea>
-                                    <img
-                                        src="./assets/icons/form-error.svg"
-                                        alt=""
-                                        className="form__input-icon-error"
-                                    />
+                                    <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                                 </div>
                                 <p className="form__error">Address not empty</p>
                             </div>
@@ -522,13 +510,43 @@ export default function Shipping() {
                                         name=""
                                         placeholder="City/District/Town"
                                         id="city"
-                                        className="form__input"
+                                        className="form__input js-toggle"
+                                        toggle-target="#city-dialog"
                                     />
-                                    <img
-                                        src="./assets/icons/form-error.svg"
-                                        alt=""
-                                        className="form__input-icon-error"
-                                    />
+                                    <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
+                                    <div id="city-dialog" className="form__select-dialog hide">
+                                        <div className="form__search">
+                                            <input type="text" placeholder="Search" className="form__search-input" />
+                                            <img src="/icons/search.svg" alt="" className="form__search-icon" />
+                                        </div>
+                                        <ul className="form__options-list">
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option form__option--current">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                            <li className="form__option">Vancover</li>
+                                            <li className="form__option">Ottawa</li>
+                                            <li className="form__option">Toronto</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <p className="form__error">Phone must be at least 11 characters</p>
                             </div>
