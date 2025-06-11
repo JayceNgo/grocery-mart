@@ -154,7 +154,112 @@ export default function Payment() {
                             <div className="col-4 col-xl-12">
                                 <div className="cart-info">
                                     <h2 className="cart-info__heading cart-info__heading--lv2">Payment Details</h2>
-
+                                    <p className="cart-info__desc">
+                                        Complete your purchase item by providing your payment details order.
+                                    </p>
+                                    <form action="" className="form cart-info__form">
+                                        <div className="form__group">
+                                            <label htmlFor="email" className="form__label form__label--medium">
+                                                Email Address
+                                            </label>
+                                            <div className="form__text-input">
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    id="email"
+                                                    placeholder="Email"
+                                                    className="form__input"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    className="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p className="form__error">Password must be at least 6 characters</p>
+                                        </div>
+                                        <div className="form__group">
+                                            <label htmlFor="card-holder" className="form__label form__label--medium">
+                                                Card Holder
+                                            </label>
+                                            <div className="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    name="card-holder"
+                                                    id="card-holder"
+                                                    placeholder="Card Holder"
+                                                    className="form__input"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    className="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p className="form__error">Password must be at least 6 characters</p>
+                                        </div>
+                                        <div className="form__group">
+                                            <label htmlFor="card-details" className="form__label form__label--medium">
+                                                Card Details
+                                            </label>
+                                            <div className="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    name="card-details"
+                                                    id="card-details"
+                                                    placeholder="Card Details"
+                                                    className="form__input"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    className="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p className="form__error">Password must be at least 6 characters</p>
+                                        </div>
+                                        <div className="form__row">
+                                            <div className="form__group">
+                                                <div className="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        name="card-expire"
+                                                        id="card-expire"
+                                                        placeholder="MM/YY"
+                                                        className="form__input"
+                                                        required
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/form-error.svg"
+                                                        alt=""
+                                                        className="form__input-icon-error"
+                                                    />
+                                                </div>
+                                                <p className="form__error">Password must be at least 6 characters</p>
+                                            </div>
+                                            <div className="form__group">
+                                                <div className="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        name="card-cvc"
+                                                        id="card-cvc"
+                                                        placeholder="CVC"
+                                                        className="form__input"
+                                                        required
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/form-error.svg"
+                                                        alt=""
+                                                        className="form__input-icon-error"
+                                                    />
+                                                </div>
+                                                <p className="form__error">Password must be at least 6 characters</p>
+                                            </div>
+                                        </div>
+                                    </form>
                                     <div className="cart-info__row">
                                         <span>
                                             Subtotal <span className="cart-info__sub-label">(items)</span>
