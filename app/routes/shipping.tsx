@@ -79,11 +79,11 @@ export default function Shipping() {
                                             <article className="address-card">
                                                 <div className="address-card__left">
                                                     <div className="address-card__choose">
-                                                        <label className="address-card__checkbox">
+                                                        <label className="cart-info__checkbox">
                                                             <input
-                                                                type="checkbox"
-                                                                name=""
-                                                                className="address-card__checkbox-input"
+                                                                type="radio"
+                                                                name="shipping-adress"
+                                                                className="cart-info__checkbox-input"
                                                                 title="Select this address"
                                                             />
                                                         </label>
@@ -104,7 +104,7 @@ export default function Shipping() {
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
                                                         <button
-                                                            className="address-card__ctrl-btn js-toggle"
+                                                            className="cart-info__edit-btn js-toggle"
                                                             toggle-target="#add-new-address"
                                                         >
                                                             <img className="icon" src="/icons/edit.svg" alt="" />
@@ -118,11 +118,11 @@ export default function Shipping() {
                                             <article className="address-card">
                                                 <div className="address-card__left">
                                                     <div className="address-card__choose">
-                                                        <label className="address-card__checkbox">
+                                                        <label className="cart-info__checkbox">
                                                             <input
                                                                 type="checkbox"
                                                                 name=""
-                                                                className="address-card__checkbox-input"
+                                                                className="cart-info__checkbox-input"
                                                                 title="Select this address"
                                                             />
                                                         </label>
@@ -144,7 +144,7 @@ export default function Shipping() {
                                                 <div className="address-card__right">
                                                     <div className="address-card__ctrl">
                                                         <button
-                                                            className="address-card__ctrl-btn js-toggle"
+                                                            className="cart-info__edit-btn js-toggle"
                                                             toggle-target="#add-new-address"
                                                         >
                                                             <img className="icon" src="/icons/edit.svg" alt="" />
