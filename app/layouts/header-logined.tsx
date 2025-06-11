@@ -5968,10 +5968,80 @@ export default function Header() {
                     </div>
 
                     <div className="top-act__group d-md-none">
-                        <button className="top-act__btn">
-                            <img src="/icons/heart.svg" alt="" className="icon top-act__icon" />
-                            <span className="top-act__title">03</span>
-                        </button>
+                        <div className="top-act__btn-wrap">
+                            <button className="top-act__btn">
+                                <img src="/icons/heart.svg" alt="" className="icon top-act__icon" />
+                                <span className="top-act__title">03</span>
+                            </button>
+
+                            {/* <!-- Dropdown --> */}
+                            <div className="act-dropdown">
+                                <div className="act-dropdown__inner">
+                                    <img src="/icons/arrow-up.png" alt="" className="act-dropdown__arrow" />
+                                    <div className="act-dropdown__top">
+                                        <h2 className="act-dropdown__title">You have 3 item(s)</h2>
+                                        <a href="#!" className="act-dropdown__view-all">
+                                            See All
+                                        </a>
+                                    </div>
+                                    <div className="row row-cols-3 gx-2 act-dropdown__list">
+                                        {/* <!-- Cart preview item 1 --> */}
+                                        <div className="col">
+                                            <article className="cart-preview-item">
+                                                <div className="cart-preview-item__img-wrap">
+                                                    <img
+                                                        src="/img/product/item-1.png"
+                                                        alt=""
+                                                        className="cart-preview-item__thumb"
+                                                    />
+                                                </div>
+                                                <h3 className="cart-preview-item__title">Lavazza Coffee Blends</h3>
+                                                <p className="cart-preview-item__price">$329.00</p>
+                                            </article>
+                                        </div>
+
+                                        {/* <!-- Cart preview item 2 --> */}
+                                        <div className="col">
+                                            <article className="cart-preview-item">
+                                                <div className="cart-preview-item__img-wrap">
+                                                    <img
+                                                        src="/img/product/item-2.png"
+                                                        alt=""
+                                                        className="cart-preview-item__thumb"
+                                                    />
+                                                </div>
+                                                <h3 className="cart-preview-item__title">Coffee Beans Espresso</h3>
+                                                <p className="cart-preview-item__price">$39.99</p>
+                                            </article>
+                                        </div>
+
+                                        {/* <!-- Cart preview item 3 --> */}
+                                        <div className="col">
+                                            <article className="cart-preview-item">
+                                                <div className="cart-preview-item__img-wrap">
+                                                    <img
+                                                        src="/img/product/item-3.png"
+                                                        alt=""
+                                                        className="cart-preview-item__thumb"
+                                                    />
+                                                </div>
+                                                <h3 className="cart-preview-item__title">Qualità Oro Mountain</h3>
+                                                <p className="cart-preview-item__price">$47.00</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div className="act-dropdown__separate"></div>
+                                    <div className="act-dropdown__checkout">
+                                        <a
+                                            href="#!"
+                                            className="btn btn--primary btn--rounded act-dropdown__checkout-btn"
+                                        >
+                                            Check Out All
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div className="top-act__separate"></div>
 
