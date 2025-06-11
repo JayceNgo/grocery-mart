@@ -515,9 +515,15 @@ export default function Shipping() {
                                     />
                                     <img src="/icons/form-error.svg" alt="" className="form__input-icon-error" />
                                     <div id="city-dialog" className="form__select-dialog hide">
+                                        <button
+                                            className="form__close-dialog d-none d-sm-block js-toggle"
+                                            toggle-target="#city-dialog"
+                                        >
+                                            &times
+                                        </button>
                                         <div className="form__search">
                                             <input type="text" placeholder="Search" className="form__search-input" />
-                                            <img src="/icons/search.svg" alt="" className="form__search-icon" />
+                                            <img src="/icons/search.svg" alt="" className="form__search-icon icon" />
                                         </div>
                                         <ul className="form__options-list">
                                             <li className="form__option">Toronto</li>

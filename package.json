@@ -7,7 +7,7 @@
         "dev": "react-router dev",
         "start": "react-router-serve ./build/server/index.js",
         "typecheck": "react-router typegen && tsc",
-        "sass": "sass app/sass:app/css -w"
+        "sass": "sass -w --source-map app/sass:app/css "
     },
     "dependencies": {
         "@react-router/node": "^7.5.3",
@@ -26,6 +26,7 @@
         "tailwindcss": "^4.1.4",
         "typescript": "^5.8.3",
         "vite": "^6.3.3",
+        "vite-plugin-devtools-json": "^0.2.0",
         "vite-tsconfig-paths": "^5.1.4"
     }
 }
