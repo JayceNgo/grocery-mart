@@ -6169,9 +6169,9 @@ export default function Header() {
                                         </a>
                                     </li>
                                     <li className="user-menu__separate">
-                                        <a href="#!" className="user-menu__link">
-                                            Dark mode
-                                            <img src="/icons/sun-dark.svg" alt="" className="icon user-menu__icon" />
+                                        <a href="#!" className="user-menu__link" id="switch-theme-btn">
+                                            <span>Dark mode</span>
+                                            <img src="/icons/sun.svg" alt="" className="icon user-menu__icon" />
                                         </a>
                                     </li>
                                     <li>

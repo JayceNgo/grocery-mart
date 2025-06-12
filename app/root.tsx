@@ -30,24 +30,6 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 export function Layout({ children }: { children: React.ReactNode }) {
-    return (
-        <html lang="en" className="">
-            <head>
-                <meta charSet="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <Meta />
-                <Links />
-            </head>
-            <body>
-                {children}
-                <ScrollRestoration />
-                <Scripts />
-            </body>
-        </html>
-    );
-}
-
-export default function App() {
     // useEffect dùng để chạy logic DOM sau khi component đã render
     useEffect(() => {
         // Select shorthand functions
@@ -209,6 +191,27 @@ export default function App() {
             });
         };
 
+        const onTemplateLoaded = () => {
+            const switchBtn = document.querySelector("#switch-theme-btn") as HTMLElement | null;
+            if (switchBtn) {
+                switchBtn.onclick = () => {
+                    const isDark = localStorage.getItem("dark") === "true";
+                    document.querySelector("html")?.classList.toggle("dark", !isDark);
+                    localStorage.setItem("dark", String(!isDark));
+                    const span = switchBtn.querySelector("span");
+                    if (span) {
+                        span.textContent = isDark ? "Dark mode" : "Light mode";
+                    }
+                };
+
+                const isDark = localStorage.getItem("dark") === "true";
+                const span = switchBtn.querySelector("span");
+                if (span) {
+                    span.textContent = isDark ? "Light mode" : "Dark mode";
+                }
+            }
+        };
+
         // Register event listeners
         window.addEventListener("resize", calArrowPos);
         window.addEventListener("template-loaded", calArrowPos);
@@ -216,6 +219,7 @@ export default function App() {
         window.addEventListener("template-loaded", initJsToggle);
         window.addEventListener("template-loaded", initDropdownClick); //  Added listener
         window.addEventListener("template-loaded", initTabs);
+        window.addEventListener("template-loaded", onTemplateLoaded);
 
         // Run on component mount
         calArrowPos();
@@ -223,6 +227,10 @@ export default function App() {
         initJsToggle();
         initDropdownClick(); //  Run once on mount
         initTabs();
+        onTemplateLoaded();
+        // Initial theme setup (before event triggers)
+        const isDark = localStorage.getItem("dark") === "true";
+        document.querySelector("html")?.classList.toggle("dark", isDark);
 
         // Clean up event listeners on component unmount
         return () => {
@@ -232,19 +240,32 @@ export default function App() {
             window.removeEventListener("template-loaded", initJsToggle);
             window.removeEventListener("template-loaded", initDropdownClick); //  Clean up
             window.removeEventListener("template-loaded", initTabs);
+            window.removeEventListener("template-loaded", onTemplateLoaded);
         };
     }, []);
     return (
+        <html lang="en" className="dark">
+            <head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <Meta />
+                <Links />
+            </head>
+            <body>
+                {children}
+                <ScrollRestoration />
+                <Scripts />
+            </body>
+        </html>
+    );
+}
+
+export default function App() {
+    return (
         <body>
-            {/* <header className="header">
-                <Header />
-            </header> */}
             <main>
                 <Outlet />
             </main>
-            {/* <footer className="footer">
-                <Footer />
-            </footer> */}
         </body>
     );
 }
