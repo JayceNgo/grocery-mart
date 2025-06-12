@@ -1715,6 +1715,9 @@ html {
     justify-content: space-between;
     margin: 0px 40px;
   }
+  .top-act__avatar {
+    margin-right: -30px;
+  }
   .top-act__sign-up {
     height: 40px !important;
     padding: 0 8px !important;

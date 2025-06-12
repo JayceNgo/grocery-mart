@@ -63,9 +63,6 @@
 
     .top-act {
         display: none;
-        // @include abstracts.screen(md) {
-        //     display: flex;
-        // }
     }
 
     @include abstracts.screen(xl) {
@@ -205,6 +202,10 @@
     @include abstracts.screen(md) {
         justify-content: space-between;
         margin: 0px 40px;
+
+        &__avatar {
+            margin-right: -30px;
+        }
 
         &__sign-up {
             height: 40px !important;
