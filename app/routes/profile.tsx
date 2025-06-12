@@ -42,7 +42,7 @@ export default function Profile() {
                                         <h3 className="profile-menu__title">Manage Account</h3>
                                         <ul className="profile-menu__list">
                                             <li>
-                                                <a href="#!" className="profile-menu__link">
+                                                <a href="/edit-personal-info" className="profile-menu__link">
                                                     <span className="profile-menu__icon">
                                                         <img src="/icons/profile.svg" alt="" className="icon" />
                                                     </span>
@@ -229,43 +229,57 @@ export default function Profile() {
                                             <div className="row gy-md-2 row-cols-2 row-cols-lg-1">
                                                 {/* <!-- Account info 1 --> */}
                                                 <div className="col">
-                                                    <article className="account-info">
-                                                        <div className="account-info__icon">
-                                                            <img src="/icons/message.svg" alt="" className="icon" />
-                                                        </div>
-                                                        <div>
-                                                            <h3 className="account-info__title">Email Address</h3>
-                                                            <p className="account-info__desc">tarek97.ta@gmail.com</p>
-                                                        </div>
-                                                    </article>
+                                                    <a href="/edit-personal-info">
+                                                        <article className="account-info">
+                                                            <div className="account-info__icon">
+                                                                <img src="/icons/message.svg" alt="" className="icon" />
+                                                            </div>
+                                                            <div>
+                                                                <h3 className="account-info__title">Email Address</h3>
+                                                                <p className="account-info__desc">
+                                                                    tarek97.ta@gmail.com
+                                                                </p>
+                                                            </div>
+                                                        </article>
+                                                    </a>
                                                 </div>
 
                                                 {/* <!-- Account info 2 --> */}
                                                 <div className="col">
-                                                    <article className="account-info">
-                                                        <div className="account-info__icon">
-                                                            <img src="/icons/calling.svg" alt="" className="icon" />
-                                                        </div>
-                                                        <div>
-                                                            <h3 className="account-info__title">Phone number</h3>
-                                                            <p className="account-info__desc">+000 11122 2345 657</p>
-                                                        </div>
-                                                    </article>
+                                                    <a href="/edit-personal-info">
+                                                        <article className="account-info">
+                                                            <div className="account-info__icon">
+                                                                <img src="/icons/calling.svg" alt="" className="icon" />
+                                                            </div>
+                                                            <div>
+                                                                <h3 className="account-info__title">Phone number</h3>
+                                                                <p className="account-info__desc">
+                                                                    +000 11122 2345 657
+                                                                </p>
+                                                            </div>
+                                                        </article>
+                                                    </a>
                                                 </div>
 
                                                 {/* <!-- Account info 3 --> */}
                                                 <div className="col">
-                                                    <article className="account-info">
-                                                        <div className="account-info__icon">
-                                                            <img src="/icons/location.svg" alt="" className="icon" />
-                                                        </div>
-                                                        <div>
-                                                            <h3 className="account-info__title">Add an address</h3>
-                                                            <p className="account-info__desc">
-                                                                Bangladesh Embassy, Washington, DC 20008
-                                                            </p>
-                                                        </div>
-                                                    </article>
+                                                    <a href="/edit-personal-info">
+                                                        <article className="account-info">
+                                                            <div className="account-info__icon">
+                                                                <img
+                                                                    src="/icons/location.svg"
+                                                                    alt=""
+                                                                    className="icon"
+                                                                />
+                                                            </div>
+                                                            <div>
+                                                                <h3 className="account-info__title">Add an address</h3>
+                                                                <p className="account-info__desc">
+                                                                    Bangladesh Embassy, Washington, DC 20008
+                                                                </p>
+                                                            </div>
+                                                        </article>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,6 +1,6 @@
 import Footer from "~/layouts/footer";
 import Header from "~/layouts/header-logined";
-export default function AddNewCard() {
+export default function EditPersonalInfo() {
     return (
         <>
             <header className="header">
@@ -42,7 +42,7 @@ export default function AddNewCard() {
                                         <h3 className="profile-menu__title">Manage Account</h3>
                                         <ul className="profile-menu__list">
                                             <li>
-                                                <a href="/edit-personal-info" className="profile-menu__link">
+                                                <a href="#!" className="profile-menu__link">
                                                     <span className="profile-menu__icon">
                                                         <img src="/icons/profile.svg" alt="" className="icon" />
                                                     </span>
@@ -51,7 +51,7 @@ export default function AddNewCard() {
                                             </li>
                                             <li>
                                                 <a href="#!" className="profile-menu__link">
-                                                    <span className="pr ofile-menu__icon">
+                                                    <span className="profile-menu__icon">
                                                         <img src="/icons/location.svg" alt="" className="icon" />
                                                     </span>
                                                     Addresses
@@ -145,12 +145,12 @@ export default function AddNewCard() {
                                             <h2 className="cart-info__heading">
                                                 <a href="/profile">
                                                     <img
-                                                        src="/icons/arrow-left.svg"
+                                                        src="./assets/icons/arrow-left.svg"
                                                         alt=""
                                                         className="icon cart-info__back-arrow"
                                                     />
                                                 </a>
-                                                Add credit or debit card
+                                                Personal info
                                             </h2>
 
                                             <form action="/profile" className="form form-card">
@@ -158,135 +158,59 @@ export default function AddNewCard() {
                                                 <div className="form__row">
                                                     <div className="form__group">
                                                         <label
-                                                            htmlFor="first-name"
+                                                            htmlFor="full-name"
                                                             className="form__label form-card__label"
                                                         >
-                                                            First Name
+                                                            Full name
                                                         </label>
                                                         <div className="form__text-input">
                                                             <input
                                                                 type="text"
                                                                 name=""
-                                                                id="first-name"
-                                                                placeholder="First name"
+                                                                id="full-name"
+                                                                placeholder="Full name"
                                                                 className="form__input"
                                                                 required
                                                                 autoFocus
                                                             />
                                                             <img
-                                                                src="/icons/form-error.svg"
+                                                                src="./assets/icons/form-error.svg"
                                                                 alt=""
                                                                 className="form__input-icon-error"
                                                             />
                                                         </div>
-                                                        <p className="form__error">Please enter your first name</p>
+                                                        <p className="form__error">Please enter your full name</p>
                                                     </div>
                                                     <div className="form__group">
                                                         <label
-                                                            htmlFor="last-name"
+                                                            htmlFor="email-adress"
                                                             className="form__label form-card__label"
                                                         >
-                                                            Last Name
+                                                            Email address
                                                         </label>
                                                         <div className="form__text-input">
                                                             <input
                                                                 type="text"
                                                                 name=""
-                                                                id="last-name"
-                                                                placeholder="Last name"
+                                                                id="email-adress"
+                                                                placeholder="Email address"
                                                                 className="form__input"
                                                                 required
                                                             />
                                                             <img
-                                                                src="/icons/form-error.svg"
-                                                                alt=""
-                                                                className="form__input-icon-error"
-                                                            />
-                                                        </div>
-                                                        <p className="form__error">Please enter your last name</p>
-                                                    </div>
-                                                </div>
-
-                                                {/* <!-- Form row 2 --> */}
-                                                <div className="form__row">
-                                                    <div className="form__group">
-                                                        <label
-                                                            htmlFor="card-number"
-                                                            className="form__label form-card__label"
-                                                        >
-                                                            Card Number
-                                                        </label>
-                                                        <div className="form__text-input">
-                                                            <input
-                                                                type="text"
-                                                                name=""
-                                                                id="card-number"
-                                                                placeholder="Card Number"
-                                                                className="form__input"
-                                                                required
-                                                            />
-                                                            <img
-                                                                src="/icons/form-error.svg"
-                                                                alt=""
-                                                                className="form__input-icon-error"
-                                                            />
-                                                        </div>
-                                                        <p className="form__error">Please enter a valid card number</p>
-                                                    </div>
-                                                    <div className="form__group">
-                                                        <label
-                                                            htmlFor="expiration-date"
-                                                            className="form__label form-card__label"
-                                                        >
-                                                            Expiration Date
-                                                        </label>
-                                                        <div className="form__text-input">
-                                                            <input
-                                                                type="text"
-                                                                name=""
-                                                                id="expiration-date"
-                                                                placeholder="Expiration Date"
-                                                                className="form__input"
-                                                                required
-                                                            />
-                                                            <img
-                                                                src="/icons/form-error.svg"
+                                                                src="./assets/icons/form-error.svg"
                                                                 alt=""
                                                                 className="form__input-icon-error"
                                                             />
                                                         </div>
                                                         <p className="form__error">
-                                                            Please enter a valid expiration date
+                                                            Please enter a valid email address
                                                         </p>
                                                     </div>
                                                 </div>
 
-                                                {/* <!-- Form row 3 --> */}
+                                                {/* <!-- Form row 2 --> */}
                                                 <div className="form__row">
-                                                    <div className="form__group">
-                                                        <label
-                                                            htmlFor="card-cvv"
-                                                            className="form__label form-card__label"
-                                                        >
-                                                            CVV
-                                                        </label>
-                                                        <div className="form__text-input">
-                                                            <input
-                                                                type="text"
-                                                                name=""
-                                                                id="card-cvv"
-                                                                placeholder="123"
-                                                                className="form__input"
-                                                                required
-                                                            />
-                                                            <img
-                                                                src="/icons/form-error.svg"
-                                                                alt=""
-                                                                className="form__input-icon-error"
-                                                            />
-                                                        </div>
-                                                        <p className="form__error">Please enter a valid CVV</p>
-                                                    </div>
                                                     <div className="form__group">
                                                         <label
                                                             htmlFor="phone-number"
@@ -304,41 +228,44 @@ export default function AddNewCard() {
                                                                 required
                                                             />
                                                             <img
-                                                                src="/icons/form-error.svg"
+                                                                src="./assets/icons/form-error.svg"
                                                                 alt=""
                                                                 className="form__input-icon-error"
                                                             />
                                                         </div>
                                                         <p className="form__error">Please enter a valid phone number</p>
                                                     </div>
-                                                </div>
-
-                                                <div className="form__group">
-                                                    <label
-                                                        htmlFor="set-default-card"
-                                                        className="form__label form-card__label"
-                                                    >
-                                                        Card Preferences
-                                                    </label>
-                                                    <label className="form__checkbox">
-                                                        <input
-                                                            type="checkbox"
-                                                            name=""
-                                                            id="set-default-card"
-                                                            checked
-                                                            className="form__checkbox-input d-none"
-                                                        />
-                                                        <span className="form__checkbox-label">
-                                                            Set as default card
-                                                        </span>
-                                                    </label>
+                                                    <div className="form__group">
+                                                        <label
+                                                            htmlFor="passowrd"
+                                                            className="form__label form-card__label"
+                                                        >
+                                                            Password
+                                                        </label>
+                                                        <div className="form__text-input">
+                                                            <input
+                                                                type="password"
+                                                                name=""
+                                                                id="passowrd"
+                                                                placeholder="Password"
+                                                                className="form__input"
+                                                                required
+                                                            />
+                                                            <img
+                                                                src="./assets/icons/form-error.svg"
+                                                                alt=""
+                                                                className="form__input-icon-error"
+                                                            />
+                                                        </div>
+                                                        <p className="form__error">Please enter new password</p>
+                                                    </div>
                                                 </div>
 
                                                 <div className="form-card__bottom">
                                                     <a className="btn btn--text" href="/profile">
                                                         Cancel
                                                     </a>
-                                                    <button className="btn btn--primary btn--rounded">Save card</button>
+                                                    <button className="btn btn--primary btn--rounded">Save</button>
                                                 </div>
                                             </form>
                                         </div>

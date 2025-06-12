@@ -15,4 +15,5 @@ export default [
     route("favourite", "routes/favourite.tsx"),
     route("profile", "routes/profile.tsx"),
     route("add-new-card", "routes/add-new-card.tsx"),
+    route("edit-personal-info", "routes/edit-personal-info.tsx"),
 ] satisfies RouteConfig;
