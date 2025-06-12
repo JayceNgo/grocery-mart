@@ -31,6 +31,7 @@ export default function SignIn() {
                                     placeholder="Email"
                                     value="admin@grocerymart.com"
                                     className="form__input"
+                                    autoFocus
                                     required
                                 />
                                 <img src="/icons/message.svg" alt="" className="form__input-icon" />

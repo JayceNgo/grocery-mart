@@ -209,7 +209,7 @@ export default function Profile() {
 
                                                 {/* <!-- Add new payment card --> */}
                                                 <div className="col">
-                                                    <a className="new-card" href="#!">
+                                                    <a className="new-card" href="/add-new-card">
                                                         <img
                                                             src="/icons/plus.svg"
                                                             alt=""

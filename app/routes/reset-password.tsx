@@ -27,6 +27,7 @@ export default function ResetPassword() {
                                     id=""
                                     placeholder="Email"
                                     className="form__input"
+                                    autoFocus
                                     required
                                 />
                                 <img src="/icons/message.svg" alt="" className="form__input-icon" />

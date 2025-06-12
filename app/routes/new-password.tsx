@@ -27,6 +27,7 @@ export default function ResetPassword() {
                                     className="form__input"
                                     value="11111111"
                                     required
+                                    autoFocus
                                     minLength={6}
                                 />
                                 <img src="/icons/lock.svg" alt="" className="form__input-icon" />
