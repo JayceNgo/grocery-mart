@@ -207,98 +207,43 @@ export default function ProductDetail() {
                                     <div className="row">
                                         <div className="col-8 col-xl-10 col-lg-12">
                                             <div className="text-content prod-tab__text-content">
-                                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                                <h2>Coffee Beans - Espresso Arabica and Robusta Blend</h2>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet <a href="#!">consectetur</a> adipisicing
-                                                    elit. Aliquid, cupiditate. Modi, quidem, ullam sint dolorum
-                                                    recusandae voluptates dignissimos similique animi assumenda
-                                                    <a href="#!">praesentium</a> et! Illum dolorem est rem voluptas nam!
-                                                    Voluptatem.
+                                                    Discover the rich aroma of our <a href="#!">premium coffee beans</a>
+                                                    , expertly crafted from a balanced blend of Arabica and Robusta.
+                                                    Perfect for espresso lovers seeking a bold and smooth taste in every
+                                                    cup.
                                                 </p>
-                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <h3>Exceptional Flavor and Quality</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
+                                                    Our beans are sourced from the finest coffee-growing regions,
+                                                    ensuring every batch meets the highest standards. The blend delivers
+                                                    a full-bodied flavor with hints of chocolate and caramel, ideal for
+                                                    both hot and iced espresso drinks.
                                                 </p>
                                                 <p>
-                                                    <img src="/img/product/item-1.png" alt="" />
-                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
+                                                    <img src="/img/product/item-1.png" alt="Espresso Coffee Beans" />
+                                                    <em>
+                                                        Carefully roasted to bring out the natural oils and flavor notes
+                                                        of each bean variety.
+                                                    </em>
                                                 </p>
                                                 <blockquote>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet <em>consectetur</em>
-                                                        <u>adipisicing</u> elit. Aliquid, cupiditate. Modi, quidem,
-                                                        ullam sint dolorum recusandae voluptates dignissimos similique
-                                                        animi assumenda praesentium et! Illum dolorem est rem voluptas
-                                                        nam! Voluptatem.
+                                                        Taste the perfect harmony of <em>Arabica's</em> smoothness and{" "}
+                                                        <u>Robusta's</u> strength in our signature espresso blend. Ideal
+                                                        for those who appreciate depth and complexity in every sip.
                                                     </p>
                                                 </blockquote>
-                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <h3>Freshly Roasted for Maximum Enjoyment</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
+                                                    Each pack is freshly roasted and sealed to preserve its flavor and
+                                                    aroma. Whether you're using a manual brewer or an espresso machine,
+                                                    our beans adapt to your preferred brewing method.
                                                 </p>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-
-                                                <hr />
-
-                                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-                                                <p>
-                                                    <img src="/img/product/item-1.png" alt="" />
-                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-
-                                                <hr />
-
-                                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
-                                                </p>
-                                                <p>
-                                                    <img src="/img/product/item-1.png" alt="" />
-                                                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em>
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-                                                    cupiditate. Modi, quidem, ullam sint dolorum recusandae voluptates
-                                                    dignissimos similique animi assumenda praesentium et! Illum dolorem
-                                                    est rem voluptas nam! Voluptatem.
+                                                    Start your morning right or enjoy a mid-day boost with our expertly
+                                                    blended espresso beans. Satisfaction guaranteed with every brew.
                                                 </p>
                                             </div>
                                         </div>

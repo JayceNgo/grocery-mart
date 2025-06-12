@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 // Filter buttonMore actions
 .filter-btn {
     display: flex;
@@ -88,7 +90,7 @@
         border-radius: 99px;
     }
 
-&--danger {
+    &--danger {
         color: #fff;
         background: #ed4337;
     }

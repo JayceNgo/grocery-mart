@@ -20,6 +20,15 @@ export default function Header() {
                         <img className="icon" src="/icons/arrow-left.svg" alt="" />
                     </button>
 
+                    {/* <!-- Actions --> */}
+                    <div className="top-act d-md-flex">
+                        <a href="/sign-in" className="btn btn--text">
+                            Sign In
+                        </a>
+                        <a href="/sign-up" className="top-act__sign-up btn btn--primary">
+                            Sign Up
+                        </a>
+                    </div>
                     <a href="/checkout" className="nav-btn d-none d-md-flex">
                         <img src="/icons/buy.svg" alt="" className="nav-btn__icon icon" />
                         <span className="nav-btn__title">Cart</span>
@@ -5964,7 +5973,7 @@ export default function Header() {
                     <a href="/sign-in" className="btn btn--text d-md-none">
                         Sign In
                     </a>
-                    <a href="/sign-up" className="top-act__sign-up btn btn--primary">
+                    <a href="/sign-up" className="top-act__sign-up btn btn--primary d-md-none">
                         Sign Up
                     </a>
                 </div>

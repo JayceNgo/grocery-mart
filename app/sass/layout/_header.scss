@@ -61,6 +61,13 @@
 .navbar {
     margin-left: 129px;
 
+    .top-act {
+        display: none;
+        // @include abstracts.screen(md) {
+        //     display: flex;
+        // }
+    }
+
     @include abstracts.screen(xl) {
         margin-left: 28px;
     }
@@ -196,7 +203,8 @@
     margin-left: auto;
 
     @include abstracts.screen(md) {
-        margin-left: 0;
+        justify-content: space-between;
+        margin: 0px 40px;
 
         &__sign-up {
             height: 40px !important;
@@ -217,10 +225,6 @@
         border-radius: 8px;
         background: var(--top-act-group-bg-color);
         box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
-
-        // @include abstracts.screen(md) {
-        //     display: none;
-        // }
     }
 
     &__group--single {

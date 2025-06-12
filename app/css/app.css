@@ -1575,6 +1575,9 @@ html {
 .navbar {
   margin-left: 129px;
 }
+.navbar .top-act {
+  display: none;
+}
 @media (max-width: 1199.98px) {
   .navbar {
     margin-left: 28px;
@@ -1709,7 +1712,8 @@ html {
 }
 @media (max-width: 767.98px) {
   .top-act {
-    margin-left: 0;
+    justify-content: space-between;
+    margin: 0px 40px;
   }
   .top-act__sign-up {
     height: 40px !important;
