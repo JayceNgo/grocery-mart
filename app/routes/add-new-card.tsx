@@ -28,7 +28,7 @@ export default function AddNewCard() {
                     {/* <!-- Profile content --> */}
                     <div className="profile-container">
                         <div className="row gy-md-3">
-                            <div className="col-3 col-xl-4 col-lg-5 col-md-12">
+                            <div className="col-3 col-xl-4 d-lg-none">
                                 <aside className="profile__sidebar">
                                     {/* <!-- User --> */}
                                     <div className="profile-user">
@@ -138,12 +138,12 @@ export default function AddNewCard() {
                                     </div>
                                 </aside>
                             </div>
-                            <div className="col-9 col-xl-8 col-lg-7 col-md-12">
+                            <div className="col-9 col-xl-8 col-lg-12">
                                 <div className="cart-info">
                                     <div className="row gy-3">
                                         <div className="col-12">
                                             <h2 className="cart-info__heading">
-                                                <a href="./profile.html">
+                                                <a href="/profile">
                                                     <img
                                                         src="/icons/arrow-left.svg"
                                                         alt=""
@@ -153,7 +153,7 @@ export default function AddNewCard() {
                                                 Add credit or debit card
                                             </h2>
 
-                                            <form action="./profile.html" className="form form-card">
+                                            <form action="/profile" className="form form-card">
                                                 {/* <!-- Form row 1 --> */}
                                                 <div className="form__row">
                                                     <div className="form__group">
@@ -335,12 +335,10 @@ export default function AddNewCard() {
                                                 </div>
 
                                                 <div className="form-card__bottom">
-                                                    <a className="btn btn--text" href="./profile.html">
+                                                    <a className="btn btn--text" href="/profile">
                                                         Cancel
                                                     </a>
-                                                    <button className="btn btn--primary btn--rounded form__submit-btn">
-                                                        Save card
-                                                    </button>
+                                                    <button className="btn btn--primary btn--rounded">Save card</button>
                                                 </div>
                                             </form>
                                         </div>
