@@ -6140,6 +6140,53 @@ export default function Header() {
 
                     <div className="top-act__user">
                         <img src="/img/avatar.jpg" alt="" className="top-act__avatar" />
+                        {/* <!-- Dropdown --> */}
+                        <div className="act-dropdown top-act__dropdown">
+                            <div className="act-dropdown__inner user-menu">
+                                <img
+                                    src="/icons/arrow-up.png"
+                                    alt=""
+                                    className="act-dropdown__arrow top-act__dropdown-arrow"
+                                />
+
+                                <div className="user-menu__top">
+                                    <img src="/img/avatar.jpg" alt="" className="user-menu__avatar" />
+                                    <div>
+                                        <p className="user-menu__name">Hiep Ngo</p>
+                                        <p>@hiepngo</p>
+                                    </div>
+                                </div>
+
+                                <ul className="user-menu__list">
+                                    <li>
+                                        <a href="/profile" className="user-menu__link">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/favourite" className="user-menu__link">
+                                            Favourite list
+                                        </a>
+                                    </li>
+                                    <li className="user-menu__separate">
+                                        <a href="#!" className="user-menu__link">
+                                            Dark mode
+                                            <img src="/icons/sun-dark.svg" alt="" className="icon user-menu__icon" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" className="user-menu__link">
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li className="user-menu__separate">
+                                        <a href="/sign-in" className="user-menu__link">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
