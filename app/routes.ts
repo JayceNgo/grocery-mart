@@ -13,4 +13,5 @@ export default [
     route("shipping", "routes/shipping.tsx"),
     route("payment", "routes/payment.tsx"),
     route("favourite", "routes/favourite.tsx"),
+    route("profile", "routes/profile.tsx"),
 ] satisfies RouteConfig;

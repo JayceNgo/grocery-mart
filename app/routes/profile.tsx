@@ -1,0 +1,241 @@
+import Footer from "~/layouts/footer";
+import Header from "~/layouts/header-logined";
+export default function Profile() {
+    return (
+        <>
+            <header className="header">
+                <Header />
+            </header>
+            {/* <!-- MAIN --> */}
+            <main className="profile">
+                <div className="container">
+                    {/* <!-- Search bar --> */}
+                    <div className="profile-container">
+                        <div className="search-bar d-none d-md-flex">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Search for item"
+                                className="search-bar__input"
+                            />
+                            <button className="search-bar__submit">
+                                <img src="/icons/search.svg" alt="" className="search-bar__icon icon" />
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* <!-- Profile content --> */}
+                    <div className="profile-container">
+                        <div className="row">
+                            <div className="col-3">
+                                <aside className="profile__sidebar">
+                                    {/* <!-- User --> */}
+                                    <div className="profile-user">
+                                        <img src="/img/avatar.jpg" alt="" className="profile-user__avatar" />
+                                        <h1 className="profile-user__name">Ngo Tran Manh Hiep</h1>
+                                        <p className="profile-user__desc">Registered: 17th May 2022</p>
+                                    </div>
+
+                                    {/* <!-- Menu 1 --> */}
+                                    <div className="profile-menu">
+                                        <h3 className="profile-menu__title">Manage Account</h3>
+                                        <ul className="profile-menu__list">
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/profile.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Personal info
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/location.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Addresses
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/message-2.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Communications & privacy
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* <!-- Menu 2 --> */}
+                                    <div className="profile-menu">
+                                        <h3 className="profile-menu__title">My items</h3>
+                                        <ul className="profile-menu__list">
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/download.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Reorder
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/heart.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Lists
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/gift-2.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Registries
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* <!-- Menu 3 --> */}
+                                    <div className="profile-menu">
+                                        <h3 className="profile-menu__title">Subscriptions & plans</h3>
+                                        <ul className="profile-menu__list">
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/shield.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Protection plans
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* <!-- Menu 4 --> */}
+                                    <div className="profile-menu">
+                                        <h3 className="profile-menu__title">Customer Service</h3>
+                                        <ul className="profile-menu__list">
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/info.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Help
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" className="profile-menu__link">
+                                                    <span className="profile-menu__icon">
+                                                        <img src="/icons/danger.svg" alt="" className="icon" />
+                                                    </span>
+                                                    Terms of Use
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div className="col-9">
+                                <div className="cart-info">
+                                    <h2 className="cart-info__heading">My Wallet</h2>
+                                    <p className="cart-info__desc profile__desc">Payment methods</p>
+
+                                    <div className="row">
+                                        {/* <!-- Payment card 1 --> */}
+                                        <div className="col-4">
+                                            <article className="payment-card" style={{ "--bg-color": "#1e2e69" } as React.CSSProperties}>
+                                                <img
+                                                    src="./assets/img/card/plane-bg.svg"
+                                                    alt=""
+                                                    className="payment-card__img"
+                                                />
+                                                <div className="payment-card__top">
+                                                    <img src="./assets/img/card/plane.svg" alt="" />
+                                                    <span className="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div className="payment-card__number">1234 4567 8901 2221</div>
+                                                <div className="payment-card__bottom">
+                                                    <div>
+                                                        <p className="payment-card__label">Card Holder</p>
+                                                        <p className="payment-card__value">Imran Khan</p>
+                                                    </div>
+                                                    <div className="payment-card__expired">
+                                                        <p className="payment-card__label">Expired</p>
+                                                        <p className="payment-card__value">10/22</p>
+                                                    </div>
+                                                    <div className="payment-card__circle"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        {/* <!-- Payment card 2 --> */}
+                                        <div className="col-4">
+                                            <article className="payment-card" style={{ "--bg-color": "#354151" } as React.CSSProperties}>
+                                                <img
+                                                    src="./assets/img/card/leaf-bg.svg"
+                                                    alt=""
+                                                    className="payment-card__img"
+                                                />
+                                                <div className="payment-card__top">
+                                                    <img src="./assets/img/card/leaf.svg" alt="" />
+                                                    <span className="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div className="payment-card__number">1234 4567 2221 8901</div>
+                                                <div className="payment-card__bottom">
+                                                    <div>
+                                                        <p className="payment-card__label">Card Holder</p>
+                                                        <p className="payment-card__value">Imran Khan</p>
+                                                    </div>
+                                                    <div className="payment-card__expired">
+                                                        <p className="payment-card__label">Expired</p>
+                                                        <p className="payment-card__value">11/22</p>
+                                                    </div>
+                                                    <div className="payment-card__circle"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        {/* <!-- Add new payment card --> */}
+                                        <div className="col-4">
+                                            <a className="new-card" href="#!">
+                                                <img src="./assets/icons/plus.svg" alt="" className="new-card__icon" />
+                                                <p className="new-card__text">Add New Card</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer className="footer">
+                <Footer />
+            </footer>
+            {/* <!-- Modal: confirm remove shopping cart item --> */}
+            <div id="delete-confirm" className="modal modal--small hide">
+                <div className="modal__content">
+                    <p className="modal__text">Do you want to remove this item from shopping cart?</p>
+                    <div className="modal__bottom">
+                        <button
+                            className="btn btn--small btn--outline modal__btn js-toggle"
+                            toggle-target="#delete-confirm"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            className="btn btn--small btn--danger btn--primary modal__btn btn--no-margin js-toggle"
+                            toggle-target="#delete-confirm"
+                        >
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div className="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+            </div>
+        </>
+    );
+}
