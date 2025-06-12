@@ -68,7 +68,6 @@ export default function Favourite() {
                                                     type="checkbox"
                                                     name="shipping-adress"
                                                     className="cart-info__checkbox-input"
-                                                    checked
                                                 />
                                             </label>
                                             <a href="./product-detail.html">
@@ -148,7 +147,6 @@ export default function Favourite() {
                                                     type="checkbox"
                                                     name="shipping-adress"
                                                     className="cart-info__checkbox-input"
-                                                    checked
                                                 />
                                             </label>
                                             <a href="./product-detail.html">
@@ -299,8 +297,8 @@ export default function Favourite() {
                                             </div>
                                         </article>
                                     </div>
-                                    <div className="cart-info__bottom d-md-none">
-                                        <div className="cart-info__row">
+                                    <div className="cart-info__bottom">
+                                        <div className="cart-info__row cart-info__row-md--block">
                                             <div className="cart-info__continue">
                                                 <a href="./" className="cart-info__continue-link">
                                                     <img
@@ -311,7 +309,12 @@ export default function Favourite() {
                                                     Continue Shopping
                                                 </a>
                                             </div>
-                                            <button className="btn btn--primary btn--rounded">All Check Out</button>
+                                            <a
+                                                href="/checkout"
+                                                className="cart-info__checkout-all btn btn--primary btn--rounded"
+                                            >
+                                                All Check Out
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
